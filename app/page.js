@@ -1,4 +1,5 @@
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {AiFillWithCircle, AiFillLinkedin, AiFillYoutube, AiFillTwitterCircle } from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -16,6 +17,22 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div>
+            <h2>
+              Viviane Dessaint
+            </h2>
+            <h3>
+              Web developper
+            </h3>
+            <p>
+              Join me
+            </p>
+          </div>
+          <div>
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+            <AiFillYoutube />
+          </div>
         </section>
       </main>
     </div>
