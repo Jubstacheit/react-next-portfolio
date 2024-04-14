@@ -6,7 +6,7 @@ export default function Home() {
       <main className='bg-white px-10'>
         <section className="h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl'>Viviane&apos;s portfolio</h1>
+            <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>

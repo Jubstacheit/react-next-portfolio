@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url(../public/ttf/JetBrainsMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'JetBrains Mono Bold';
+	src: url(../public/ttf/JetBrainsMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'JetBrains Mono Extra Bold';
+	src: url(../public/ttf/JetBrainsMono-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: 'JetBrains Mono Italic';
+	src: url(../public/ttf/JetBrainsMono-Italic.ttf);
+}

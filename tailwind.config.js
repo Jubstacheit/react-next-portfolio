@@ -1,18 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+export const content = [
+  "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+  "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  "./app/**/*.{js,ts,jsx,tsx,mdx}",
+];
+export const theme = {
+  extend: {
+    backgroundImage: {
+      "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    },
+    fontFamily: {
+      JetBrains_Mono: ['JetBrains Mono', 'monospace'],
+      JetBrains_MonoBold: ['JetBrains Mono Bold', 'monospace'],
+      JetBrains_MonoExtraBold: ['JetBrains Mono Extra Bold', 'monospace'],
+      JetBrains_MonoItalic: ['JetBrains Mono Italic', 'monospace'],
     },
   },
-  plugins: [],
 };
+export const plugins = [];
