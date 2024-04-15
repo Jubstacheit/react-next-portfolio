@@ -1,5 +1,10 @@
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillWithCircle, AiFillLinkedin, AiFillYoutube, AiFillTwitterCircle } from 'react-icons/ai';
+import {AiFillLinkedin, AiFillYoutube, AiFillTwitterCircle } from 'react-icons/ai';
+import Image from "next/image";
+import profile from "../public/profile.png";
+import design from '../public/design.png';
+import code from '../public/code.png';
+
 
 export default function Home() {
   return (
@@ -33,7 +38,49 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
+          <div className='relative p-2 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+            <Image alt='Profile picture' src={profile} />
+          </div>
         </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Worked with Vittascience etc etc
+            </p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image alt='Design icon' src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <p className='py-2'>
+                Creating elegant designs blablabla je vais pas garder ça
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <p className='text-gray-800 py-1'>Liste des logiciels</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image alt='Design icon' src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <p className='py-2'>
+                Creating elegant designs blablabla je vais pas garder ça
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <p className='text-gray-800 py-1'>Liste des logiciels</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image alt='Design icon' src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <p className='py-2'>
+                Creating elegant designs blablabla je vais pas garder ça
+              </p>
+              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <p className='text-gray-800 py-1'>Liste des logiciels</p>
+            </div>
+          </div>
+        </section>
+
       </main>
     </div>
   );
