@@ -9,8 +9,8 @@ import code from '../public/code.png';
 export default function Home() {
   return (
     <div>
-      <main className='bg-white px-10'>
-        <section className="h-screen">
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
+        <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
             <ul className='flex items-center'>
@@ -23,23 +23,23 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-JetBrains_Mono font-medium'>
+            <h2 className='text-5xl py-2 text-teal-600 font-JetBrains_Mono font-medium md:text-6xl'>
               Viviane Dessaint
             </h2>
-            <h3 className='text-2xl py-2'>
+            <h3 className='text-2xl py-2 md:text-3xl'>
               Web developper
             </h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
               Join me
             </p>
-          </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
-          </div>
-          <div className='relative p-2 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
-            <Image alt='Profile picture' src={profile} />
+            <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+              <AiFillTwitterCircle />
+              <AiFillLinkedin />
+              <AiFillYoutube />
+            </div>
+            <div className='relative p-2 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96'>
+              <Image alt='Profile picture' src={profile} objectFit='cover' />
+            </div>
           </div>
         </section>
 
@@ -81,6 +81,19 @@ export default function Home() {
           </div>
         </section>
 
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Worked with Vittascience etc etc
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image alt='Project 1' />
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
