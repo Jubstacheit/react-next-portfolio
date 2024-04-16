@@ -50,7 +50,7 @@ export default function Home() {
               Worked with Vittascience etc etc
             </p>
           </div>
-          <div>
+          <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image alt='Design icon' src={design} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
@@ -61,7 +61,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Liste des logiciels</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image alt='Design icon' src={design} width={100} height={100} />
+              <Image alt='Design icon' src={code} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
               <p className='py-2'>
                 Creating elegant designs blablabla je vais pas garder ça
@@ -88,9 +88,9 @@ export default function Home() {
               Worked with Vittascience etc etc
             </p>
           </div>
-          <div>
-            <div>
-              <Image alt='Project 1' />
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Project 1' src={profile} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
             </div>
           </div>
         </section>
