@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className={darkMode ? 'dark' : ""}>
       <div className='sticky top-0'>
-        <nav className='px-10 md:px-20 lg:px-40 py-10 mb-12 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
+        <nav className='px-10 md:px-20 lg:px-40 py-10 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
           <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
           <ul className='flex items-center ml-4'>
             <li>
@@ -34,7 +34,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen">          
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-purple-500 font-JetBrains_Mono font-medium md:text-6xl dark:text-violet-300'>
+            <h2 className='text-5xl py-2 mt-6 text-purple-500 font-JetBrains_Mono font-medium md:text-6xl dark:text-violet-300'>
               Viviane Dessaint
             </h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>
