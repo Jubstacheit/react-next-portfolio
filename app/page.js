@@ -19,19 +19,19 @@ export default function Home() {
     <div className={darkMode ? 'dark' : ""}>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen">
-          <nav className='py-10 mb-12 flex justify-between dark:text-white'>
+          <nav className='sticky top-0 py-10 mb-12 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
             <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
               </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
+                <a className='font-JetBrains_MonoBold bg-gradient-to-r from-violet-300 to-purple-500 text-white px-4 py-2 rounded-md ml-8' href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
               </li>
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-JetBrains_Mono font-medium md:text-6xl dark:text-teal-400'>
+            <h2 className='text-5xl py-2 text-purple-500 font-JetBrains_Mono font-medium md:text-6xl dark:text-violet-300'>
               Viviane Dessaint
             </h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>
@@ -45,7 +45,7 @@ export default function Home() {
               <AiFillLinkedin />
               <AiFillYoutube />
             </div>
-            <div className='relative p-2 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96'>
+            <div className='p-2 mx-auto bg-gradient-to-b from-blue-400 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96'>
               <Image alt='Profile picture' src={profile} objectFit='cover' />
             </div>
           </div>
