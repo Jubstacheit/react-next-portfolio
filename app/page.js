@@ -18,14 +18,14 @@ export default function Home() {
   return (
     <div className={darkMode ? 'dark' : ""}>
       <div className='sticky top-0'>
-        <nav className='px-10 md:px-20 lg:px-40 py-10 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
+        <nav className='px-10 md:px-20 lg:px-40 py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
           <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
           <ul className='flex items-center ml-4'>
             <li>
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
             </li>
             <li>
-              <a className='font-JetBrains_MonoBold bg-gradient-to-r from-violet-300 to-purple-500 text-white px-4 py-2 rounded-md ml-8' href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
+              <a className='bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white px-4 py-2 rounded-md ml-8' href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
             </li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@ export default function Home() {
 
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen">          
-          <div className='text-center p-10'>
+          <div className='text-center p-10 pb-0'>
             <h2 className='text-5xl py-2 mt-6 text-purple-500 font-JetBrains_Mono font-medium md:text-6xl dark:text-violet-300'>
               Viviane Dessaint
             </h2>
@@ -59,9 +59,9 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Services I offer</h3>
+            <h3 className='text-3xl py-1 dark:text-white'>My experiences</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Worked with Vittascience etc etc
+              I&apos;ve graduated from the <span className='text-violet-300 font-JetBrains_MonoBold'><a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">Iscod</a></span> school in 2023 with a bachelor&apos;s degree in Application Designer and Developer. I&apos;ve also worked with <span className='text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">Vittascience</a></span> for more than a year, as a front-end and accessibility developer.
             </p>
           </div>
           <div className='lg:flex gap-10'>
