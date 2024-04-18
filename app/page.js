@@ -7,7 +7,15 @@ import profile from "../public/profile.png";
 import front from '../public/react.png'
 import design from '../public/design.png';
 import code from '../public/code.png';
-import { TbBrandNextjs, TbBrandReact, TbBrandReactNative } from "react-icons/tb";
+import { 
+  TbBrandNextjs, 
+  TbBrandReact, 
+  TbBrandReactNative, 
+  TbBrandNodejs, 
+  TbBrandMysql, 
+  TbBrandMongodb, 
+  TbBrandPhp 
+} from "react-icons/tb";
 
 import { useState } from 'react';
 
@@ -72,37 +80,102 @@ export default function Home() {
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} width={100} height={100} />
               </div>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Front-end</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Frontend</h3>
               <p className='py-2'>
                 By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
                 accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-teal-600'>Fontend tech I use</h4>
-              <p className='text-gray-800 py-1'>Liste des logiciels</p>
+              <h4 className='py-4 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
+              <div className='flex justify-center gap-6 flex-wrap'>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandReact className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>ReactJS</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandReactNative className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>React Native</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandNextjs className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>NextJS</p>
+                </div>
+              </div>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+              <div className='flex justify-center'>
+                <Image alt='Back-end icon' src={code} width={100} height={100} />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Backend</h3>
+              <p className='py-2'>
+                During my bachelor&apos;s degree, I worked on full-stack app and complex backend structures, databases and APIs. I&apos;m able to create full
+                stack applications with Express, I&apos;ve got some experience with PHP and I even worked on a SAAS.
+              </p>
+              <h4 className='py-4 text-purple-500 font-JetBrains_MonoBold'>Backend tech I use</h4>
+              <div className='flex justify-around gap-6 flex-wrap'>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandNodejs className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>ExpressJS</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandMysql className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>MySQL</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandMongodb className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>MongoDB</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandPhp className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>PHP</p>
+                </div>
+              </div>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={design} width={100} height={100} />
               </div>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Front-end</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Design</h3>
               <p className='py-2'>
                 By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
                 accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-teal-600'>Fontend tech I use</h4>
-              <p className='text-gray-800 py-1'>Liste des logiciels</p>
-            </div><div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className='flex justify-center'>
-                <Image alt='Design icon' src={design} width={100} height={100} />
+              <h4 className='py-4 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
+              <div className='flex justify-center gap-6 flex-wrap'>
+                <div>
+                  <div className='flex justify-center'>
+                    <TbBrandReact className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>ReactJS</p>
+                </div>
+                <div>
+                  <div className='flex justify-center'>
+                    <TbBrandReactNative className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>React Native</p>
+                </div>
+                <div>
+                  <div className='flex justify-center'>
+                    <TbBrandNextjs className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>NextJS</p>
+                </div>
               </div>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Front-end</h3>
-              <p className='py-2'>
-                By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
-                accessible and responsive web and mobile interfaces.
-              </p>
-              <h4 className='py-4 text-teal-600'>Fontend tech I use</h4>
-              <p className='text-gray-800 py-1'>Liste des logiciels</p>
             </div>
+            
           </div>
         </section>
 
