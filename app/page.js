@@ -61,7 +61,7 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>My experiences</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              I&apos;ve graduated from the <span className='text-violet-300 font-JetBrains_MonoBold'><a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">Iscod</a></span> school in 2023 with a bachelor&apos;s degree in Application Designer and Developer. I&apos;ve also worked with <span className='text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">Vittascience</a></span> for more than a year, as a front-end and accessibility developer.
+              I&apos;ve graduated from the <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">Iscod</a></span> school in 2023 with a bachelor&apos;s degree in Application Designer and Developer. I&apos;ve also worked with <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">Vittascience</a></span> for more than a year, as a front-end and accessibility developer.
             </p>
           </div>
           <div className='lg:flex gap-10'>
