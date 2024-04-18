@@ -4,8 +4,11 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
 import profile from "../public/profile.png";
+import front from '../public/react.png'
 import design from '../public/design.png';
 import code from '../public/code.png';
+import { TbBrandNextjs, TbBrandReact, TbBrandReactNative } from "react-icons/tb";
+
 import { useState } from 'react';
 
 
@@ -66,30 +69,38 @@ export default function Home() {
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <Image alt='Design icon' src={design} width={100} height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <div className='flex justify-center'>
+                <Image alt='Design icon' src={front} width={100} height={100} />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Front-end</h3>
               <p className='py-2'>
-                Creating elegant designs blablabla je vais pas garder ça
+                By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
+                accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <h4 className='py-4 text-teal-600'>Fontend tech I use</h4>
               <p className='text-gray-800 py-1'>Liste des logiciels</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <Image alt='Design icon' src={code} width={100} height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <div className='flex justify-center'>
+                <Image alt='Design icon' src={design} width={100} height={100} />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Front-end</h3>
               <p className='py-2'>
-                Creating elegant designs blablabla je vais pas garder ça
+                By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
+                accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <h4 className='py-4 text-teal-600'>Fontend tech I use</h4>
               <p className='text-gray-800 py-1'>Liste des logiciels</p>
-            </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <Image alt='Design icon' src={design} width={100} height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+            </div><div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+              <div className='flex justify-center'>
+                <Image alt='Design icon' src={design} width={100} height={100} />
+              </div>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Front-end</h3>
               <p className='py-2'>
-                Creating elegant designs blablabla je vais pas garder ça
+                By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
+                accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
+              <h4 className='py-4 text-teal-600'>Fontend tech I use</h4>
               <p className='text-gray-800 py-1'>Liste des logiciels</p>
             </div>
           </div>
