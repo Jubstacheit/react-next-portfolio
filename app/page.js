@@ -45,10 +45,10 @@ export default function Home() {
             </p>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
               <a href='https://www.linkedin.com/in/vivianedessaint/'>
-                <AiFillLinkedin />
+                <AiFillLinkedin className='transition-all duration-300 hover:text-purple-500 dark:hover:text-violet-300'/>
               </a>
               <a href="https://github.com/Jubstacheit">
-                <AiFillGithub />
+                <AiFillGithub className='transition-all duration-300 hover:text-purple-500 dark:hover:text-violet-300'/>
               </a>
             </div>
             <div className='p-2 mx-auto bg-gradient-to-b from-blue-400 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96'>
