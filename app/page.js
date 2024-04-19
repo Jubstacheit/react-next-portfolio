@@ -78,14 +78,14 @@ export default function Home() {
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className='flex justify-center'>
-                <Image alt='Design icon' src={front} width={100} height={100} />
+                <Image alt='Design icon' src={front} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Frontend</h3>
               <p className='py-2'>
                 By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
                 accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
+              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
               <div className='flex justify-center gap-6 flex-wrap'>
                 <div className='min-w-20'>
                   <div className='flex justify-center'>
@@ -116,7 +116,7 @@ export default function Home() {
                 During my bachelor&apos;s degree, I worked on full-stack app and complex backend structures, databases and APIs. I&apos;m able to create full
                 stack applications with Express, I&apos;ve got some experience with PHP and I even worked on a SAAS.
               </p>
-              <h4 className='py-4 text-purple-500 font-JetBrains_MonoBold'>Backend tech I use</h4>
+              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Backend tech I use</h4>
               <div className='flex justify-around gap-6 flex-wrap'>
                 <div className='min-w-20'>
                   <div className='flex justify-center'>
@@ -153,7 +153,7 @@ export default function Home() {
                 By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
                 accessible and responsive web and mobile interfaces.
               </p>
-              <h4 className='py-4 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
+              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
               <div className='flex justify-center gap-6 flex-wrap'>
                 <div>
                   <div className='flex justify-center'>
