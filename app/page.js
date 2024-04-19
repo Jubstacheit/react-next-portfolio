@@ -105,8 +105,8 @@ export default function Home() {
                 </span>.
             </p>
           </div>
-          <div className='lg:flex lg:flex-wrap gap-8 lg:gap-0'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
+          <div className='lg:flex lg:flex-wrap gap-8 my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} height={100} />
               </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
+            <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Back-end icon' src={code} width={100} height={100} />
               </div>
@@ -192,7 +192,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
+            <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={design} width={100} height={100} />
               </div>
@@ -228,13 +228,13 @@ export default function Home() {
         </section>
 
         <section>
+          <div className='flex flex-col gap-4 py-10 lg:flex-nowrap'>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div className='flex flex-col gap-4 py-10 lg:flex-nowrap'>
             <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
               Playback
             </p>
