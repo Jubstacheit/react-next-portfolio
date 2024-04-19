@@ -239,10 +239,10 @@ export default function Home() {
               Playback
             </p>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover px-8' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover px-8' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <p className='text-sm leading-6 text-gray-800 dark:text-gray-200'>
               I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
