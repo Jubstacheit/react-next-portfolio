@@ -105,8 +105,8 @@ export default function Home() {
                 </span>.
             </p>
           </div>
-          <div className='lg:flex lg:flex-wrap gap-8 my-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white lg:basis-full'>
+          <div className='lg:flex lg:flex-wrap my-10 lg:justify-center'>
+            <div className='text-center shadow-lg p-10 rounded-xl m-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} height={100} />
               </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white lg:basis-full'>
+            <div className='text-center shadow-lg p-10 rounded-xl m-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Back-end icon' src={code} width={100} height={100} />
               </div>
@@ -192,7 +192,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl dark:bg-white lg:basis-full'>
+            <div className='text-center shadow-lg p-10 rounded-xl m-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={design} width={100} height={100} />
               </div>
