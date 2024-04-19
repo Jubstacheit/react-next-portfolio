@@ -21,3 +21,22 @@
 	font-family: 'JetBrains Mono Italic';
 	src: url(../public/ttf/JetBrainsMono-Italic.ttf);
 }
+
+.animated-background {
+    background-size: 1200%;
+
+    -webkit-animation: animation 6s ease infinite;
+    -moz-animation: animation 6s ease infinite;
+    animation: animation 6s ease infinite;
+}
+
+@keyframes animation {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+}

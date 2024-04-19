@@ -19,7 +19,7 @@ import {
   TbXd
 } from "react-icons/tb";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
@@ -27,6 +27,17 @@ import { useState } from 'react';
 export default function Home() {
   // Dark mode
   const [darkMode, setDarkMode] = useState(false);
+  const [shineMode, setShineMode] = useState(false);
+
+  const isShiny = () => {
+    setShineMode(false);
+    setShineMode(true);
+    const timer = setTimeout(() => {
+      setShineMode(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }
 
   return (
     <div className={darkMode ? 'dark' : ""}>
@@ -38,7 +49,10 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
             </li>
             <li>
-              <a className='bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white px-4 py-2 rounded-md ml-8' href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
+              <div>
+                
+              </div>
+              <a className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 rounded-md ml-8 ${shineMode ? 'text-lg font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
             </li>
           </ul>
         </nav>
@@ -74,7 +88,14 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>My experiences</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              I&apos;ve graduated from the <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">Iscod</a></span> school in 2023 with a bachelor&apos;s degree in Application Designer and Developer. I&apos;ve also worked with <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">Vittascience</a></span> for more than a year, as a front-end and accessibility developer.
+              I&apos;ve graduated from the <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'>
+                <a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">Iscod</a>
+                </span> school in 2023 with a bachelor&apos;s degree in Application Designer and Developer. I&apos;ve also worked 
+                with <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">
+                Vittascience</a>
+                </span> for more than a year, as a front-end and accessibility developer.
+                For more details, please refer to my <span onClick={isShiny} className='text-purple-500 hover:cursor-pointer dark:text-violet-300 font-JetBrains_MonoBold'>resume
+                </span>.
             </p>
           </div>
           <div className='lg:flex gap-10'>
