@@ -14,7 +14,9 @@ import {
   TbBrandNodejs, 
   TbBrandMysql, 
   TbBrandMongodb, 
-  TbBrandPhp 
+  TbBrandPhp,
+  TbBrandFigma,
+  TbXd
 } from "react-icons/tb";
 
 import { useState } from 'react';
@@ -86,7 +88,7 @@ export default function Home() {
                 accessible and responsive web and mobile interfaces.
               </p>
               <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
-              <div className='flex justify-center gap-6 flex-wrap'>
+              <div className='flex justify-around gap-6 flex-wrap'>
                 <div className='min-w-20'>
                   <div className='flex justify-center'>
                     <TbBrandReact className='text-4xl text-blue-500'/>
@@ -155,28 +157,27 @@ export default function Home() {
                 web apps, backend structures and databses with UML diagrams or even the Merise method.
               </p>
               <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Design tools I use</h4>
-              <div className='flex justify-center gap-6 flex-wrap'>
+              <div className='flex justify-around gap-6 flex-wrap'>
                 <div>
                   <div className='flex justify-center'>
-                    <TbBrandReact className='text-4xl text-blue-500'/>
+                    <TbBrandFigma className='text-4xl text-blue-500'/>
                   </div>
-                  <p>ReactJS</p>
+                  <p>Figma</p>
                 </div>
                 <div>
                   <div className='flex justify-center'>
-                    <TbBrandReactNative className='text-4xl text-blue-500'/>
+                    <Image width="36" height="36" src="https://img.icons8.com/3B82F6/external-kiranshastry-solid-kiranshastry/64/external-flow-interface-kiranshastry-solid-kiranshastry.png" alt="external-flow-interface-kiranshastry-solid-kiranshastry"/>
                   </div>
-                  <p>React Native</p>
+                  <p>UML</p>
                 </div>
                 <div>
                   <div className='flex justify-center'>
-                    <TbBrandNextjs className='text-4xl text-blue-500'/>
+                    <TbXd className='text-4xl text-blue-500'/>
                   </div>
-                  <p>NextJS</p>
+                  <p>AdobeXD</p>
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
 
