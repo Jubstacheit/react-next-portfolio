@@ -1,6 +1,6 @@
 'use client'
 
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {BsFillMoonStarsFill, BsGithub, BsLink} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
 import profile from "../public/profile.png";
@@ -213,8 +213,11 @@ export default function Home() {
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+          <div className='flex flex-col gap-4 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
+              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+                Playback
+              </p>
               <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -225,8 +228,21 @@ export default function Home() {
               allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
               you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
               This is still in progress and other functions are coming, like the game rating. <br />
-              The app is primarily usable on Android as a Native app, made with React Native.
+              The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
             </p>
+            <div className=''>
+              <p className='text-xl font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                Links
+              </p>
+              <div className='flex flex-row justify-start gap-4'>
+                <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
+                  <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
+                </a>
+                <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
+                  <BsGithub className='text-4xl'/>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
