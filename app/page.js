@@ -7,6 +7,8 @@ import profile from "../public/profile.png";
 import front from '../public/react.png'
 import design from '../public/design.png';
 import code from '../public/code.png';
+import playback1 from '../public/portfolio/playback1.png'
+import playback2 from '../public/portfolio/playback2.jpg'
 import { 
   TbBrandNextjs, 
   TbBrandReact, 
@@ -70,7 +72,7 @@ export default function Home() {
               Web and mobile developer
             </h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200'>
-              Developing SASS mobile and web applications with React Native, ReactJS and NextJS.
+              Developing SASS mobile and web applications with React Native, ReactJS and NextJS. Looking for job opportunities in Paris !
             </p>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
               <a href='https://www.linkedin.com/in/vivianedessaint/'>
@@ -208,18 +210,28 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Worked with Vittascience etc etc
+              Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Project 1' src={profile} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
             </div>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
+            </div>
+            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200'>
+              I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
+              allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
+              you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
+              This is still in progress and other functions are coming, like the game rating. <br />
+              The app is primarily usable on Android as a Native app, made with React Native.
+            </p>
           </div>
         </section>
 
         {/* Credit for the flow icon */}
-        <p className='text-xs text-black dark:text-white font-JetBrains_MonoItalic text-center'>
+        <p className='text-xs py-2 text-black dark:text-white font-JetBrains_MonoItalic text-center'>
           <a href="https://icons8.com/icon/VEovKpkL1py0/flow">Flow</a> icon by <a href="https://icons8.com">Icons8</a>
         </p>
 
