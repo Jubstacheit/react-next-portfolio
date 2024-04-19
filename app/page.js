@@ -230,17 +230,28 @@ export default function Home() {
               This is still in progress and other functions are coming, like the game rating. <br />
               The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
             </p>
-            <div className=''>
-              <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                Links
-              </p>
-              <div className='flex flex-row justify-start gap-4'>
-                <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
-                  <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
-                </a>
-                <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
-                  <BsGithub className='text-4xl'/>
-                </a>
+            <div className='flex flex-row justify-around gap-28'>
+              <div>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Links
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
+                  </a>
+                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsGithub className='text-4xl'/>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Tech used
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
+                </div>
               </div>
             </div>
           </div>
