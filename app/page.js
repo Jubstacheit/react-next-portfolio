@@ -1,6 +1,6 @@
 'use client'
 
-import {BsFillMoonStarsFill, BsGithub, BsLink} from 'react-icons/bs';
+import {BsBootstrap, BsFillMoonStarsFill, BsGithub, BsLink} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
 import profile from "../public/profile.png";
@@ -18,7 +18,10 @@ import {
   TbBrandMongodb, 
   TbBrandPhp,
   TbBrandFigma,
-  TbXd
+  TbXd,
+  TbBrandTailwind,
+  TbBrandBootstrap,
+  TbBrandDocker
 } from "react-icons/tb";
 
 import { useState, useEffect } from 'react';
@@ -132,6 +135,18 @@ export default function Home() {
                   </div>
                   <p>NextJS</p>
                 </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandTailwind className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>Tailwind</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandBootstrap className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>Bootstrap</p>
+                </div>
               </div>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
@@ -168,6 +183,12 @@ export default function Home() {
                     <TbBrandPhp className='text-4xl text-blue-500'/>
                   </div>
                   <p>PHP</p>
+                </div>
+                <div className='min-w-20'>
+                  <div className='flex justify-center'>
+                    <TbBrandDocker className='text-4xl text-blue-500'/>
+                  </div>
+                  <p>Docker</p>
                 </div>
               </div>
             </div>
@@ -231,7 +252,7 @@ export default function Home() {
               The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
             </p>
             <div className='flex flex-row justify-around gap-28'>
-              <div>
+              <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
                   Links
                 </p>
@@ -244,13 +265,14 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div>
+              <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
                   <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
                   <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
                 </div>
               </div>
             </div>
