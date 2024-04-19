@@ -49,9 +49,6 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
             </li>
             <li>
-              <div>
-                
-              </div>
               <a className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 rounded-md ml-8 ${shineMode ? 'text-lg font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
             </li>
           </ul>
