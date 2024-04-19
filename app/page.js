@@ -26,7 +26,9 @@ import { useState, useEffect } from 'react';
 
 export default function Home() {
   // Dark mode
-  const [darkMode, setDarkMode] = useState(false);
+  const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const [darkMode, setDarkMode] = useState(prefersDarkMode);
   const [shineMode, setShineMode] = useState(false);
 
   const isShiny = () => {
