@@ -194,6 +194,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Credit for the flow icon */}
+        <p className='text-xs font-JetBrains_MonoItalic text-center'>
+          <a href="https://icons8.com/icon/VEovKpkL1py0/flow">Flow</a> icon by <a href="https://icons8.com">Icons8</a>
+        </p>
+
       </main>
     </div>
   );
