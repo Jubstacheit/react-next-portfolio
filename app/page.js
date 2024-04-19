@@ -58,8 +58,8 @@ export default function Home() {
             <li>
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
             </li>
-            <li>
-              <a className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 rounded-md ml-8 ${shineMode ? 'text-lg font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
+            <li className='w-32'>
+              <a className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 ml-4 md:ml-8 rounded-md ${shineMode ? 'text-lg font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="/CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
             </li>
           </ul>
         </nav>
@@ -105,7 +105,7 @@ export default function Home() {
                 </span>.
             </p>
           </div>
-          <div className='lg:flex lg:flex-wrap gap-10'>
+          <div className='lg:flex lg:flex-wrap gap-8 lg:gap-0'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} height={100} />
@@ -234,11 +234,11 @@ export default function Home() {
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div className='flex flex-col gap-4 py-10 lg:flex-row lg:flex-wrap'>
+          <div className='flex flex-col gap-4 py-10 lg:flex-nowrap'>
+            <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+              Playback
+            </p>
             <div className='basis-1/3 flex-1'>
-              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-                Playback
-              </p>
               <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <div className='basis-1/3 flex-1'>
