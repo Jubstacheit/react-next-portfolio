@@ -231,7 +231,7 @@ export default function Home() {
               The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
             </p>
             <div className=''>
-              <p className='text-xl font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+              <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
                 Links
               </p>
               <div className='flex flex-row justify-start gap-4'>
