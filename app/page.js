@@ -228,14 +228,14 @@ export default function Home() {
         </section>
 
         <section>
-          <div className='flex flex-col gap-4 py-10 lg:flex-nowrap'>
+          <div className='flex flex-col gap-8 py-10 lg:flex-nowrap'>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-            <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+            <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
               Playback
             </p>
             <div className='basis-1/3 flex-1'>
