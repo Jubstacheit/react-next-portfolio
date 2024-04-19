@@ -95,8 +95,8 @@ export default function Home() {
                 </span>.
             </p>
           </div>
-          <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+          <div className='lg:flex lg:flex-wrap gap-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} height={100} />
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Back-end icon' src={code} width={100} height={100} />
               </div>
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:basis-full'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={design} width={100} height={100} />
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
+            <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               Worked with Vittascience etc etc
             </p>
@@ -214,7 +214,7 @@ export default function Home() {
         </section>
 
         {/* Credit for the flow icon */}
-        <p className='text-xs font-JetBrains_MonoItalic text-center'>
+        <p className='text-xs text-black dark:text-white font-JetBrains_MonoItalic text-center'>
           <a href="https://icons8.com/icon/VEovKpkL1py0/flow">Flow</a> icon by <a href="https://icons8.com">Icons8</a>
         </p>
 
