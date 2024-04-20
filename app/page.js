@@ -31,9 +31,6 @@ import {
 
 import { useState, useEffect } from 'react';
 
-
-
-
 export default function Home() {
   // Dark mode
   const [darkMode, setDarkMode] = useState(false);
@@ -240,13 +237,13 @@ export default function Home() {
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
+          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
                 Playback
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center'>
               <Image 
                 alt='Playback 1' 
                 src={playback1} 
@@ -256,7 +253,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center'>
               <Image 
                 alt='Playback 2' 
                 src={playback2} 
@@ -305,8 +302,8 @@ export default function Home() {
                 My work at Vittascience
               </p>
             </div>
-            <div className='lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
-              <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center max-w-md'>
+            <div className='lg:flex-row lg:flex-wrap md:flex-col md:flex lg:flex md:justify-center lg:justify-center'>
+              <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center max-w-lg'>
                 <Image 
                   alt='Vittascience 1' 
                   src={vittascience1} 
@@ -316,7 +313,7 @@ export default function Home() {
                   layout='responsive' 
                 />
               </div>
-              <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+              <div className='basis-1/3 flex-1 lg:px-2 self-center py-4 max-w-lg'>
                 <Image 
                   alt='Vittascience 2' 
                   src={vittascience2} 
@@ -358,13 +355,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
+          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex md:flex-col lg:justify-center'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
                 Linktree clone
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center'>
               <Image 
                 alt='Linktree' 
                 src={linktree1} 
