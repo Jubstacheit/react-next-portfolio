@@ -11,6 +11,7 @@ import playback1 from '../public/portfolio/playback1.png'
 import playback2 from '../public/portfolio/playback2.jpg'
 import vittascience1 from '../public/portfolio/vittascience1.png'
 import vittascience2 from '../public/portfolio/vittascience2.png'
+import linktree1 from '../public/portfolio/linktree1.png'
 
 import { 
   TbBrandNextjs, 
@@ -24,7 +25,8 @@ import {
   TbXd,
   TbBrandTailwind,
   TbBrandBootstrap,
-  TbBrandDocker
+  TbBrandDocker,
+  TbBrandVercel
 } from "react-icons/tb";
 
 import { useState, useEffect } from 'react';
@@ -231,7 +233,7 @@ export default function Home() {
         </section>
 
       <section>
-        <div className='flex flex-col gap-8 py-10 lg:flex-nowrap'>
+        <div className='flex flex-col gap-8 py-10 lg:flex-row lg:flex-wrap'>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
@@ -242,11 +244,25 @@ export default function Home() {
             <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
               Playback
             </p>
-            <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
+            <div className='basis-1/3 flex-1 lg:px-8 py-4'>
+              <Image 
+                alt='Playback 1' 
+                src={playback1} 
+                className='rounded-lg object-cover' 
+                width={'100%'} 
+                height={"100%"} 
+                layout='responsive' 
+              />
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
+            <div className='basis-1/3 flex-1  lg:px-8 py-4'>
+              <Image 
+                alt='Playback 2' 
+                src={playback2} 
+                className='rounded-lg object-cover' 
+                width={'100%'} 
+                height={"100%"} 
+                layout='responsive' 
+              />
             </div>
             <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
               I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
@@ -314,9 +330,47 @@ export default function Home() {
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandReactNative className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandDocker className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandPhp className='text-4xl text-purple-500 dark:text-violet-300'/>
                   <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbXd className='text-4xl text-purple-500 dark:text-violet-300'/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='py-4'>
+            <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+              Linktree clone
+            </p>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Playback 1' src={linktree1} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
+            </div>
+            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
+              A Linktree clone I made with NextJS, TailwindCSS, and the Vercel&apos;s Edge Config Store. It serves as a hub for my different links for
+              my projects - personnal and profesionnal - and social media. The data is stored in the Edge Config Store in the form of a JSON. Adding
+              or editing links and pictures changes the website without having to redeploy it. It&apos;s a fun project and I plan on updating it with
+              multinlingual display and new links. <br />
+              This project leads to personnal links and socials, so it won&apos;t be shared on this portfolio aside from the repository.
+            </p>
+            <div className='flex flex-row justify-around gap-28 lg:px-8'>
+              <div className='flex flex-col justify-center text-center'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Link
+                </p>
+                <div className='flex flex-row justify-center'>
+                  <a href='https://github.com/Jubstacheit/linktree' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsGithub className='text-4xl'/>
+                  </a>
+                </div>
+              </div>
+              <div className='flex flex-col justify-center text-center'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Tech used
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <TbBrandNextjs className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandTailwind className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandVercel className='text-4xl text-purple-500 dark:text-violet-300'/>
                 </div>
               </div>
             </div>
