@@ -31,9 +31,6 @@ import {
 
 import { useState, useEffect } from 'react';
 
-
-
-
 export default function Home() {
   // Dark mode
   const [darkMode, setDarkMode] = useState(false);
@@ -240,13 +237,13 @@ export default function Home() {
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
+          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
-              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
                 Playback
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
               <Image 
                 alt='Playback 1' 
                 src={playback1} 
@@ -256,7 +253,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
               <Image 
                 alt='Playback 2' 
                 src={playback2} 
@@ -266,7 +263,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-2'>
+            <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
               I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
               allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
               you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
@@ -275,38 +272,38 @@ export default function Home() {
             </p>
             <div className='flex flex-row justify-around gap-28 lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Links
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
+                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500'>
                     <BsLink className='text-4xl'/>
                   </a>
-                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
+                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500'>
                     <BsGithub className='text-4xl'/>
                   </a>
                 </div>
               </div>
               <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandReactNative className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandReactNative className='text-4xl text-purple-500'/>
+                  <TbBrandNodejs className='text-4xl text-purple-500'/>
+                  <TbBrandMysql className='text-4xl text-purple-500'/>
                 </div>
               </div>
             </div>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
+          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
-              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
                 My work at Vittascience
               </p>
             </div>
-            <div className='lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
-              <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center max-w-md'>
+            <div className='lg:flex-row lg:flex-wrap md:flex-col md:flex lg:flex md:justify-center lg:justify-center lg:gap-2'>
+              <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center max-w-lg shadow-lg p-4 rounded-xl dark:bg-white'>
                 <Image 
                   alt='Vittascience 1' 
                   src={vittascience1} 
@@ -316,7 +313,7 @@ export default function Home() {
                   layout='responsive' 
                 />
               </div>
-              <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+              <div className='basis-1/3 flex-1 lg:px-2 self-center py-4 max-w-lg shadow-lg p-4 rounded-xl dark:bg-white'>
                 <Image 
                   alt='Vittascience 2' 
                   src={vittascience2} 
@@ -327,7 +324,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-2'>
+            <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
               During my time at Vittascience, my work revolved mainly on front-end and accessibility. Here you can see elements like the 
               programming interfaces provided by the website - Python here - or the &quot;print mode&quot; for the ressources, to make them 
               more accessible for the schools. I had to adapt the high-contrast mode for the interfaces, because it wasn&apos;t available at first.
@@ -336,35 +333,35 @@ export default function Home() {
             </p>
             <div className='flex flex-row justify-around gap-28 lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Link
                 </p>
                 <div className='flex flex-row justify-center'>
-                  <a href='https://fr.vittascience.com' className='text-md text-purple-500 dark:text-violet-300'>
+                  <a href='https://fr.vittascience.com' className='text-md text-purple-500'>
                     <BsLink className='text-4xl'/>
                   </a>
                 </div>
               </div>
               <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandDocker className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandPhp className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbXd className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandDocker className='text-4xl text-purple-500'/>
+                  <TbBrandPhp className='text-4xl text-purple-500'/>
+                  <TbBrandMysql className='text-4xl text-purple-500'/>
+                  <TbXd className='text-4xl text-purple-500'/>
                 </div>
               </div>
             </div>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
+          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex md:flex-col lg:justify-center shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
-              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
                 Linktree clone
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
               <Image 
                 alt='Linktree' 
                 src={linktree1} 
@@ -374,7 +371,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-2'>
+            <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
               A Linktree clone I made with NextJS, TailwindCSS, and the Vercel&apos;s Edge Config Store. It serves as a hub for my different links for
               my projects - personnal and profesionnal - and social media. The data is stored in the Edge Config Store in the form of a JSON. Adding
               or editing links and pictures changes the website without having to redeploy it. It&apos;s a fun project and I plan on updating it with
@@ -383,23 +380,23 @@ export default function Home() {
             </p>
             <div className='flex flex-row justify-around gap-28 lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Link
                 </p>
                 <div className='flex flex-row justify-center gap-4'>
-                  <a href='https://github.com/Jubstacheit/linktree' className='text-md text-purple-500 dark:text-violet-300'>
+                  <a href='https://github.com/Jubstacheit/linktree' className='text-md text-purple-500'>
                     <BsGithub className='text-4xl'/>
                   </a>
                 </div>
               </div>
               <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandNextjs className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandTailwind className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandVercel className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandNextjs className='text-4xl text-purple-500'/>
+                  <TbBrandTailwind className='text-4xl text-purple-500'/>
+                  <TbBrandVercel className='text-4xl text-purple-500'/>
                 </div>
               </div>
             </div>
