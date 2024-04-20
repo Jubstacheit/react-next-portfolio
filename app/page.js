@@ -233,18 +233,20 @@ export default function Home() {
         </section>
 
       <section>
-        <div className='flex flex-col gap-8 py-10 lg:flex-row lg:flex-wrap'>
-          <div>
+        <div className='flex flex-col gap-4 py-10 lg:flex-row lg:flex-wrap lg:gap-0 justify-center'>
+          <div className='w-full'>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div className='py-4'>
-            <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-              Playback
-            </p>
-            <div className='basis-1/3 flex-1 lg:px-8 py-4'>
+          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
+            <div className='text-center w-full'>
+              <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+                Playback
+              </p>
+            </div>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4'>
               <Image 
                 alt='Playback 1' 
                 src={playback1} 
@@ -254,7 +256,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <div className='basis-1/3 flex-1  lg:px-8 py-4'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4'>
               <Image 
                 alt='Playback 2' 
                 src={playback2} 
@@ -264,7 +266,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
+            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-2'>
               I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
               allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
               you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
