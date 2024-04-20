@@ -227,59 +227,102 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className='flex flex-col gap-8 py-10 lg:flex-nowrap'>
+      <section>
+        <div className='flex flex-col gap-8 py-10 lg:flex-nowrap'>
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
             </p>
           </div>
-          <div>
+          <div className='py-4'>
             <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-                Playback
-              </p>
-              <div className='basis-1/3 flex-1'>
-                <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
-              </div>
-              <div className='basis-1/3 flex-1'>
-                <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
-              </div>
-              <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
-                I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
-                allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
-                you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
-                This is still in progress and other functions are coming, like the game rating. <br />
-                The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
-              </p>
-              <div className='flex flex-row justify-around gap-28 lg:px-8'>
-                <div className='flex flex-col justify-center text-center'>
-                  <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                    Links
-                  </p>
-                  <div className='flex flex-row justify-start gap-4'>
-                    <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
-                      <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
-                    </a>
-                    <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
-                      <BsGithub className='text-4xl'/>
-                    </a>
-                  </div>
+              Playback
+            </p>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+            </div>
+            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
+              I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
+              allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
+              you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
+              This is still in progress and other functions are coming, like the game rating. <br />
+              The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
+            </p>
+            <div className='flex flex-row justify-around gap-28 lg:px-8'>
+              <div className='flex flex-col justify-center text-center'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Links
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
+                  </a>
+                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsGithub className='text-4xl'/>
+                  </a>
                 </div>
-                <div className='flex flex-col justify-center text-center'>
-                  <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                    Tech used
-                  </p>
-                  <div className='flex flex-row justify-start gap-4'>
-                    <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
-                    <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
-                    <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  </div>
+              </div>
+              <div className='flex flex-col justify-center text-center'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Tech used
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+          <div className='py-4'>
+            <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
+              Playback
+            </p>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+            </div>
+            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
+              I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
+              allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
+              you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
+              This is still in progress and other functions are coming, like the game rating. <br />
+              The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
+            </p>
+            <div className='flex flex-row justify-around gap-28 lg:px-8'>
+              <div className='flex flex-col justify-center text-center'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Links
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
+                  </a>
+                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsGithub className='text-4xl'/>
+                  </a>
+                </div>
+              </div>
+              <div className='flex flex-col justify-center text-center'>
+                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
+                  Tech used
+                </p>
+                <div className='flex flex-row justify-start gap-4'>
+                  <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
         {/* Credit for the flow icon */}
         <p className='text-xs py-2 text-black dark:text-white font-JetBrains_MonoItalic text-center'>
