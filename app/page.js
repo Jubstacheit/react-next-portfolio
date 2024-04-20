@@ -9,6 +9,9 @@ import design from '../public/design.png';
 import code from '../public/code.png';
 import playback1 from '../public/portfolio/playback1.png'
 import playback2 from '../public/portfolio/playback2.jpg'
+import vittascience1 from '../public/portfolio/vittascience1.png'
+import vittascience2 from '../public/portfolio/vittascience2.png'
+
 import { 
   TbBrandNextjs, 
   TbBrandReact, 
@@ -240,10 +243,10 @@ export default function Home() {
               Playback
             </p>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
               I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
@@ -259,7 +262,7 @@ export default function Home() {
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
                   <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
-                    <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
+                    <BsLink className='text-4xl'/>
                   </a>
                   <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
                     <BsGithub className='text-4xl'/>
@@ -271,7 +274,7 @@ export default function Home() {
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandReactNative className='text-4xl text-purple-500 dark:text-violet-300'/>
                   <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
                   <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
                 </div>
@@ -280,32 +283,29 @@ export default function Home() {
           </div>
           <div className='py-4'>
             <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-              Playback
+              My work at Vittascience
             </p>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 1' src={playback1} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Vittascience 1' src={vittascience1} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 2' src={playback2} className='rounded-lg object-cover lg:px-8' width={'100%'} height={"100%"} layout='responsive' />
+              <Image alt='Vittascience 2' src={vittascience2} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
             </div>
             <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
-              I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
-              allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
-              you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
-              This is still in progress and other functions are coming, like the game rating. <br />
-              The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
+              During my time at Vittascience, my work revolved mainly on front-end and accessibility. Here you can see elements like the 
+              programming interfaces provided by the website - Python here - or the &quot;print mode&quot; for the ressources, to make them 
+              more accessible for the schools. I had to adapt the high-contrast mode for the interfaces, because it wasn&apos;t available at first.
+              I also added aria-labels to the elements, and made them usable with the keyboard of the user. I also created new pages from scratch, like 
+              the glossary. Vittascience gave me lots of experience about the accessibility of the web.
             </p>
             <div className='flex flex-row justify-around gap-28 lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                  Links
+                  Link
                 </p>
-                <div className='flex flex-row justify-start gap-4'>
-                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
-                    <BsLink href='https://playbackapp.netlify.app' className='text-4xl'/>
-                  </a>
-                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
-                    <BsGithub className='text-4xl'/>
+                <div className='flex flex-row justify-center'>
+                  <a href='https://fr.vittascience.com' className='text-md text-purple-500 dark:text-violet-300'>
+                    <BsLink className='text-4xl'/>
                   </a>
                 </div>
               </div>
@@ -314,7 +314,7 @@ export default function Home() {
                   Tech used
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandReactNative href='https://playbackapp.netlify.app' className='text-4xl text-purple-500 dark:text-violet-300'/>
+                  <TbBrandReactNative className='text-4xl text-purple-500 dark:text-violet-300'/>
                   <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
                   <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
                 </div>
