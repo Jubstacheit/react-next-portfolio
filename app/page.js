@@ -246,7 +246,7 @@ export default function Home() {
                 Playback
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
               <Image 
                 alt='Playback 1' 
                 src={playback1} 
@@ -256,7 +256,7 @@ export default function Home() {
                 layout='responsive' 
               />
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
               <Image 
                 alt='Playback 2' 
                 src={playback2} 
@@ -306,7 +306,7 @@ export default function Home() {
               </p>
             </div>
             <div className='lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
-              <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center'>
+              <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center max-w-md'>
                 <Image 
                   alt='Vittascience 1' 
                   src={vittascience1} 
@@ -316,7 +316,7 @@ export default function Home() {
                   layout='responsive' 
                 />
               </div>
-              <div className='basis-1/3 flex-1 lg:px-2 py-4'>
+              <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
                 <Image 
                   alt='Vittascience 2' 
                   src={vittascience2} 
@@ -361,23 +361,13 @@ export default function Home() {
           <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-                Playback
+                Linktree clone
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4'>
+            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-md'>
               <Image 
-                alt='Playback 1' 
-                src={playback1} 
-                className='rounded-lg object-cover' 
-                width={'100%'} 
-                height={"100%"} 
-                layout='responsive' 
-              />
-            </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4'>
-              <Image 
-                alt='Playback 2' 
-                src={playback2} 
+                alt='Linktree' 
+                src={linktree1} 
                 className='rounded-lg object-cover' 
                 width={'100%'} 
                 height={"100%"} 
@@ -385,87 +375,6 @@ export default function Home() {
               />
             </div>
             <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-2'>
-              I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
-              allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
-              you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
-              This is still in progress and other functions are coming, like the game rating. <br />
-              The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
-            </p>
-            <div className='flex flex-row justify-around gap-28 lg:px-8'>
-              <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                  Links
-                </p>
-                <div className='flex flex-row justify-start gap-4'>
-                  <a href='https://playbackapp.netlify.app' className='text-md text-purple-500 dark:text-violet-300'>
-                    <BsLink className='text-4xl'/>
-                  </a>
-                  <a href='https://github.com/Jubstacheit/Playback' className='text-md text-purple-500 dark:text-violet-300'>
-                    <BsGithub className='text-4xl'/>
-                  </a>
-                </div>
-              </div>
-              <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                  Tech used
-                </p>
-                <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandReactNative className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandNodejs className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='py-4'>
-            <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-              My work at Vittascience
-            </p>
-            <div className='basis-1/3 flex-1'>
-              <Image alt='Vittascience 1' src={vittascience1} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image alt='Vittascience 2' src={vittascience2} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
-            </div>
-            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
-              During my time at Vittascience, my work revolved mainly on front-end and accessibility. Here you can see elements like the 
-              programming interfaces provided by the website - Python here - or the &quot;print mode&quot; for the ressources, to make them 
-              more accessible for the schools. I had to adapt the high-contrast mode for the interfaces, because it wasn&apos;t available at first.
-              I also added aria-labels to the elements, and made them usable with the keyboard of the user. I also created new pages from scratch, like 
-              the glossary. Vittascience gave me lots of experience about the accessibility of the web.
-            </p>
-            <div className='flex flex-row justify-around gap-28 lg:px-8'>
-              <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                  Link
-                </p>
-                <div className='flex flex-row justify-center'>
-                  <a href='https://fr.vittascience.com' className='text-md text-purple-500 dark:text-violet-300'>
-                    <BsLink className='text-4xl'/>
-                  </a>
-                </div>
-              </div>
-              <div className='flex flex-col justify-center text-center'>
-                <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
-                  Tech used
-                </p>
-                <div className='flex flex-row justify-start gap-4'>
-                  <TbBrandDocker className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandPhp className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbBrandMysql className='text-4xl text-purple-500 dark:text-violet-300'/>
-                  <TbXd className='text-4xl text-purple-500 dark:text-violet-300'/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='py-4'>
-            <p className='text-2xl text-center font-JetBrains_MonoBold py-4 text-gray-800 dark:text-gray-200'>
-              Linktree clone
-            </p>
-            <div className='basis-1/3 flex-1'>
-              <Image alt='Playback 1' src={linktree1} className='rounded-lg object-cover lg:px-8 py-4' width={'100%'} height={"100%"} layout='responsive' />
-            </div>
-            <p className='text-sm leading-6 text-gray-800 dark:text-gray-200 py-4 lg:px-8'>
               A Linktree clone I made with NextJS, TailwindCSS, and the Vercel&apos;s Edge Config Store. It serves as a hub for my different links for
               my projects - personnal and profesionnal - and social media. The data is stored in the Edge Config Store in the form of a JSON. Adding
               or editing links and pictures changes the website without having to redeploy it. It&apos;s a fun project and I plan on updating it with
@@ -477,7 +386,7 @@ export default function Home() {
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800 dark:text-gray-200'>
                   Link
                 </p>
-                <div className='flex flex-row justify-center'>
+                <div className='flex flex-row justify-center gap-4'>
                   <a href='https://github.com/Jubstacheit/linktree' className='text-md text-purple-500 dark:text-violet-300'>
                     <BsGithub className='text-4xl'/>
                   </a>
