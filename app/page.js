@@ -38,8 +38,9 @@ import { DarkToggle } from './components/darkToggle';
 export default function Home() {
   // Dark mode
   const { darkMode } = useStore();
+  
 
-
+  // Shine mode
   const [shineMode, setShineMode] = useState(false);
 
   const isShiny = () => {
