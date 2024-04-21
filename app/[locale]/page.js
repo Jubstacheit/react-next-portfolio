@@ -3,15 +3,15 @@
 import {BsBootstrap, BsFillMoonStarsFill, BsGithub, BsLink} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
-import profile from "../public/profile.png";
-import front from '../public/react.png'
-import design from '../public/design.png';
-import code from '../public/code.png';
-import playback1 from '../public/portfolio/playback1.png'
-import playback2 from '../public/portfolio/playback2.jpg'
-import vittascience1 from '../public/portfolio/vittascience1.png'
-import vittascience2 from '../public/portfolio/vittascience2.png'
-import linktree1 from '../public/portfolio/linktree1.png'
+import profile from "../../public/profile.png";
+import front from '../../public/react.png'
+import design from '../../public/design.png';
+import code from '../../public/code.png';
+import playback1 from '../../public/portfolio/playback1.png'
+import playback2 from '../../public/portfolio/playback2.jpg'
+import vittascience1 from '../../public/portfolio/vittascience1.png'
+import vittascience2 from '../../public/portfolio/vittascience2.png'
+import linktree1 from '../../public/portfolio/linktree1.png'
 
 import { 
   TbBrandNextjs, 
@@ -29,10 +29,10 @@ import {
   TbBrandVercel
 } from "react-icons/tb";
 
-import { useStore } from './store';
+import { useStore } from '../store';
 
-import { DarkToggle } from './components/darkToggle';
-import { ShinyToggle } from './components/shinyToggle';
+import { DarkToggle } from '../components/darkToggle';
+import { ShinyToggle } from '../components/shinyToggle';
 
 
 export default function Home() {
