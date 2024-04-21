@@ -34,21 +34,19 @@ import { DarkToggle } from '../components/darkToggle';
 import { ShinyToggle } from '../components/shinyToggle';
 import Hero from './hero';
 import { useMessages } from 'next-intl';
-import { useStore } from 'zustand';
+import { useStore } from '../store';
 
 
 
 
 export default function Home() {
   // Dark mode
-  //const { darkMode } = useStore();
-  
+  const darkMode = useStore(state => state.darkMode);
+
   // Shine mode
-  //const { shineMode } = useStore();
+  const shineMode = useStore(state => state.shineMode);
 
-  const darkMode = true
-  const shineMode = false
-
+  // Translations
   const t = useMessages();
 
 
