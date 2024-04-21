@@ -6,5 +6,12 @@
 	"hero": {
 		"subtitle": "Développeuse web et mobile",
 		"desc": "Je développe des SASS mobile et web à l'aide de React, React Native et NextJS. À la recherche d'opportunités sur Paris !"
+	},
+	"experiences" : {
+		"title": "Mon expérience",
+		"desc1": "En 2023, j'ai été diplômée d'un Bachelor Concepteur Développeur d'Applications à l'",
+		"desc2": ". J'ai également travaillé pendant plus d'un an à ",
+		"desc3": " en tant que développeuse front-end et accessibilité. Pour plus de détails, veuillez vous référer à mon ",
+		"resume": "CV"
 	}
 }

@@ -2,10 +2,12 @@
 
 import { useStore } from "../store"
 import { useState } from "react"
+import { useMessages } from "next-intl"
 
 export function ShinyToggle() {
 	const { setShineMode } = useStore()
 	const [isClicked, setIsClicked] = useState(false);
+	const t = useMessages()
 
 	const isShiny = () => {
 		if (!isClicked) {
@@ -21,6 +23,6 @@ export function ShinyToggle() {
 	}
 
 	return (
-		<span onClick={isShiny} className='text-purple-500 hover:cursor-pointer dark:text-violet-300 font-JetBrains_MonoBold'>resume</span>
+		<span onClick={isShiny} className='text-purple-500 hover:cursor-pointer dark:text-violet-300 font-JetBrains_MonoBold'>{t.experiences.resume}</span>
 	)
 }

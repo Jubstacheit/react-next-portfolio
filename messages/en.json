@@ -6,5 +6,12 @@
 	"hero": {
 		"subtitle": "Web and mobile developer",
 		"desc": "Developing SASS mobile and web applications with React Native, ReactJS and NextJS. Looking for job opportunities in Paris !"
+	},
+	"experiences" : {
+		"title": "My experiences",
+		"desc1": "I've graduated from the ",
+		"desc2": " school in 2023 with a bachelor's degree in Application Design and Development. I've also worked with ",
+		"desc3": " for more than a year, as a front-end and accessibility developer. For more details, please refer to my ",
+		"resume": "resume"
 	}
 }

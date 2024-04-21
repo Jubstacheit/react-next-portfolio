@@ -57,7 +57,7 @@ export default function Home() {
       <div className='sticky top-0'>
         <nav className='px-4 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
           <h1 className='text-center text-md md:text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
-          <ul className='flex items-center gap-2 ml-4'>
+          <ul className='flex items-center gap-4 ml-4'>
             <li>
               <TbLanguage className='text-2xl cursor-pointer'/>
             </li>
@@ -78,15 +78,15 @@ export default function Home() {
 
         <section>
           <div className='p-2'>
-            <h3 className='text-3xl py-1 dark:text-white'>My experiences</h3>
+            <h3 className='text-3xl py-1 dark:text-white'>{t.experiences.title}</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              I&apos;ve graduated from the <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'>
-                <a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">Iscod</a>
-                </span> school in 2023 with a bachelor&apos;s degree in Application Designer and Developer. I&apos;ve also worked 
-                with <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">
-                Vittascience</a>
-                </span> for more than a year, as a front-end and accessibility developer.
-                For more details, please refer to my <ShinyToggle />.
+              {t.experiences.desc1}
+              <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://www.iscod.fr/formation-concepteur-developpeur-applications-en-alternance">ISCOD</a></span>
+              {t.experiences.desc2}
+              <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">Vittascience</a></span>
+              {t.experiences.desc3}
+              <ShinyToggle />
+              .
             </p>
           </div>
           <div className='lg:flex lg:flex-wrap my-10 lg:justify-center'>
