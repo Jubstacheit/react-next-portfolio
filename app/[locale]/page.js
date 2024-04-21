@@ -34,8 +34,11 @@ import {
 
 import { DarkToggle } from '../components/darkToggle';
 import { ShinyToggle } from '../components/shinyToggle';
+import { LangToggle } from '../components/langToggle';
+
 import Hero from './hero';
-import { useMessages } from 'next-intl';
+
+import { useMessages, useLocale } from 'next-intl';
 import { useStore } from '../store';
 
 
@@ -50,6 +53,7 @@ export default function Home() {
 
   // Translations
   const t = useMessages();
+  const locale = useLocale();
 
 
   return (
@@ -59,10 +63,11 @@ export default function Home() {
           <h1 className='text-center text-md md:text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
           <ul className='flex items-center gap-4 ml-4'>
             <li>
-              <TbLanguage className='text-2xl cursor-pointer'/>
+            <LangToggle locale={locale}/>
+              {/*<TbLanguage className='text-2xl cursor-pointer'/>*/}
             </li>
             <li>
-              <DarkToggle />
+              <DarkToggle locale={locale}/>
             </li>
             <li>
               <a className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 ml-4 md:ml-8 rounded-md ${shineMode ? 'font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="./CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
