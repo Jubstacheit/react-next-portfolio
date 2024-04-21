@@ -1,5 +1,3 @@
-'use client'
-
 import {BsBootstrap, BsFillMoonStarsFill, BsGithub, BsLink} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
