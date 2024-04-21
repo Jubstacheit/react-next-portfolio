@@ -10,5 +10,8 @@ export const useStore = create((set, get) => ({
     },
 
 	shineMode: false,
-	setShineMode: (value) => set({ shineMode: value }),
+	setShineMode: () => {
+		const currentShineMode = get().shineMode;
+		set({ shineMode: !currentShineMode });
+	}
 }));
