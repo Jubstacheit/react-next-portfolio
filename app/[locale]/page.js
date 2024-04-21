@@ -35,6 +35,8 @@ import { DarkToggle } from '../components/darkToggle';
 import { ShinyToggle } from '../components/shinyToggle';
 
 
+
+
 export default function Home() {
   // Dark mode
   const { darkMode } = useStore();
