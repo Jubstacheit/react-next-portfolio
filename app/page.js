@@ -30,16 +30,17 @@ import {
 } from "react-icons/tb";
 
 import { useState, useEffect } from 'react';
+import { useStore } from './store';
+
+import { DarkToggle } from './components/darkToggle';
+
 
 export default function Home() {
   // Dark mode
-  const [darkMode, setDarkMode] = useState(false);
-  const [shineMode, setShineMode] = useState(false);
+  const { darkMode } = useStore();
 
-  useEffect(() => {
-    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setDarkMode(prefersDarkMode);
-  }, []);
+
+  const [shineMode, setShineMode] = useState(false);
 
   const isShiny = () => {
     setShineMode(false);
@@ -58,7 +59,7 @@ export default function Home() {
           <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
           <ul className='flex items-center ml-4'>
             <li>
-              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
+              <DarkToggle />
             </li>
             <li className='w-32'>
               <a className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 ml-4 md:ml-8 rounded-md ${shineMode ? 'text-lg font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="./CV.pdf" download="Viviane Dessaint - CV" >Resume</a>
