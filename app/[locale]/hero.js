@@ -7,7 +7,7 @@ export default function Hero() {
 	const t = useMessages()
 	
 	return (
-		<div className='text-center p-10 pb-0'>
+		<div className='text-center p-2 md:p-10 pb-0'>
 			<h2 className='text-5xl py-2 mt-6 text-purple-500 font-JetBrains_Mono font-medium md:text-6xl dark:text-violet-300'>
 				Viviane Dessaint
 			</h2>

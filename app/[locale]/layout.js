@@ -17,7 +17,6 @@ export default function RootLayout({ children, locale }) {
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={t}>
-          <Home />
           {children}
         </NextIntlClientProvider>
       </body>

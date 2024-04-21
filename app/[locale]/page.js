@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div className={darkMode ? 'dark' : ""}>
       <div className='sticky top-0'>
-        <nav className='px-10 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
+        <nav className='px-4 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
           <h1 className='text-center text-md md:text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
           <ul className='flex items-center gap-2 ml-4'>
             <li>
@@ -71,13 +71,13 @@ export default function Home() {
         </nav>
       </div>
 
-      <main className='bg-white px-10 md:px-20 lg:px-32 dark:bg-gray-900'>
+      <main className='bg-white px-4 md:px-20 lg:px-32 dark:bg-gray-900'>
         <section className="min-h-screen">          
           <Hero />
         </section>
 
         <section>
-          <div>
+          <div className='p-2'>
             <h3 className='text-3xl py-1 dark:text-white'>My experiences</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
               I&apos;ve graduated from the <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'>
@@ -90,7 +90,7 @@ export default function Home() {
             </p>
           </div>
           <div className='lg:flex lg:flex-wrap my-10 lg:justify-center'>
-            <div className='text-center shadow-lg p-10 rounded-xl m-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
+            <div className='text-center shadow-lg p-4 md:p-10 rounded-xl md:mx-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} height={100} />
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl m-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
+            <div className='text-center shadow-lg p-4 md:p-10 rounded-xl md:mx-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Back-end icon' src={code} width={100} height={100} />
               </div>
@@ -176,7 +176,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl m-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
+            <div className='text-center shadow-lg p-4 md:p-10 rounded-xl md:mx-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={design} width={100} height={100} />
               </div>
@@ -252,7 +252,7 @@ export default function Home() {
               This is still in progress and other functions are coming, like the game rating. <br />
               The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
             </p>
-            <div className='flex flex-row justify-around gap-28 lg:px-8'>
+            <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Links
@@ -313,7 +313,7 @@ export default function Home() {
               I also added aria-labels to the elements, and made them usable with the keyboard of the user. I also created new pages from scratch, like 
               the glossary. Vittascience gave me lots of experience about the accessibility of the web.
             </p>
-            <div className='flex flex-row justify-around gap-28 lg:px-8'>
+            <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Link
@@ -360,7 +360,7 @@ export default function Home() {
               multinlingual display and new links. <br />
               This project leads to personnal links and socials, so it won&apos;t be shared on this portfolio aside from the repository.
             </p>
-            <div className='flex flex-row justify-around gap-28 lg:px-8'>
+            <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Link
