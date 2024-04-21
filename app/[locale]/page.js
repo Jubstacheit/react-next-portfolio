@@ -29,26 +29,34 @@ import {
   TbBrandVercel
 } from "react-icons/tb";
 
-import { useStore } from '../store';
 
 import { DarkToggle } from '../components/darkToggle';
 import { ShinyToggle } from '../components/shinyToggle';
+import Hero from './hero';
+import { useMessages } from 'next-intl';
+import { useStore } from 'zustand';
 
 
 
 
 export default function Home() {
   // Dark mode
-  const { darkMode } = useStore();
+  //const { darkMode } = useStore();
   
   // Shine mode
-  const { shineMode } = useStore();
+  //const { shineMode } = useStore();
+
+  const darkMode = true
+  const shineMode = false
+
+  const t = useMessages();
+
 
   return (
     <div className={darkMode ? 'dark' : ""}>
       <div className='sticky top-0'>
         <nav className='px-10 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
-          <h1 className='text-xl font-JetBrains_MonoBold'>VIVIANE&apos;S PORTFOLIO</h1>
+          <h1 className='text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
           <ul className='flex items-center ml-4'>
             <li>
               <DarkToggle />
@@ -62,28 +70,7 @@ export default function Home() {
 
       <main className='bg-white px-10 md:px-20 lg:px-32 dark:bg-gray-900'>
         <section className="min-h-screen">          
-          <div className='text-center p-10 pb-0'>
-            <h2 className='text-5xl py-2 mt-6 text-purple-500 font-JetBrains_Mono font-medium md:text-6xl dark:text-violet-300'>
-              Viviane Dessaint
-            </h2>
-            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>
-              Web and mobile developer
-            </h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200'>
-              Developing SASS mobile and web applications with React Native, ReactJS and NextJS. Looking for job opportunities in Paris !
-            </p>
-            <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
-              <a href='https://www.linkedin.com/in/vivianedessaint/'>
-                <AiFillLinkedin className='transition-all duration-300 hover:text-purple-500 dark:hover:text-violet-300'/>
-              </a>
-              <a href="https://github.com/Jubstacheit">
-                <AiFillGithub className='transition-all duration-300 hover:text-purple-500 dark:hover:text-violet-300'/>
-              </a>
-            </div>
-            <div className='p-2 mx-auto bg-gradient-to-b from-blue-400 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96'>
-              <Image alt='Profile picture' src={profile} objectFit='cover' />
-            </div>
-          </div>
+          <Hero />
         </section>
 
         <section>

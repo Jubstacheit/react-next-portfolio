@@ -1,5 +1,10 @@
 {
-	"Index": {
-	  "title": "Hello world!"
+	"header": {
+		"title": "VIVIANE'S PORTFOLIO",
+		"resume": "Resume"
+	},
+	"hero": {
+		"subtitle": "Web and mobile developer",
+		"desc": "Developing SASS mobile and web applications with React Native, ReactJS and NextJS. Looking for job opportunities in Paris !"
 	}
-  }
+}

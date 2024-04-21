@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
-import { useTranslations } from "next-intl";
+import Home from "./page";
+import { useTranslations, useMessages, NextIntlClientProvider } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,12 +11,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, locale }) {
-  const t = useTranslations('Index');
+  const t = useMessages();
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        {children}
+        <NextIntlClientProvider locale={locale} messages={t}>
+          <Home />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

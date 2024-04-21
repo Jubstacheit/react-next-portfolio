@@ -1,5 +1,10 @@
 {
-	"Index": {
-	  "title": "Yo la team!"
+	"header": {
+		"title": "VIVIANE DESSAINT",
+		"resume": "Mon CV"
+	},
+	"hero": {
+		"subtitle": "Développeuse web et mobile",
+		"desc": "Je développe des SASS mobile et web à l'aide de React, React Native et NextJS. À la recherche d'opportunités sur Paris !"
 	}
-  }
+}
