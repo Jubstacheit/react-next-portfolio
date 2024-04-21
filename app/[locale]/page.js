@@ -26,7 +26,9 @@ import {
   TbBrandTailwind,
   TbBrandBootstrap,
   TbBrandDocker,
-  TbBrandVercel
+  TbBrandVercel,
+  TbLanguage,
+  TbLanguageOff
 } from "react-icons/tb";
 
 
@@ -54,8 +56,11 @@ export default function Home() {
     <div className={darkMode ? 'dark' : ""}>
       <div className='sticky top-0'>
         <nav className='px-10 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
-          <h1 className='text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
-          <ul className='flex items-center ml-4'>
+          <h1 className='text-center text-md md:text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
+          <ul className='flex items-center gap-2 ml-4'>
+            <li>
+              <TbLanguage className='text-2xl cursor-pointer'/>
+            </li>
             <li>
               <DarkToggle />
             </li>
