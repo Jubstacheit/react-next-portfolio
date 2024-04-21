@@ -2,9 +2,12 @@
 
 import { create } from 'zustand'
 
-export const useStore = create((set) => ({
+export const useStore = create((set, get) => ({
 	darkMode: true,
-	setDarkMode: (value) => set({ darkMode: value }),
+	setDarkMode: () => {
+        const currentDarkMode = get().darkMode;
+        set({ darkMode: !currentDarkMode });
+    },
 
 	shineMode: false,
 	setShineMode: (value) => set({ shineMode: value }),
