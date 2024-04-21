@@ -33,25 +33,15 @@ import { useState, useEffect } from 'react';
 import { useStore } from './store';
 
 import { DarkToggle } from './components/darkToggle';
+import { ShinyToggle } from './components/shinyToggle';
 
 
 export default function Home() {
   // Dark mode
   const { darkMode } = useStore();
   
-
   // Shine mode
-  const [shineMode, setShineMode] = useState(false);
-
-  const isShiny = () => {
-    setShineMode(false);
-    setShineMode(true);
-    const timer = setTimeout(() => {
-      setShineMode(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }
+  const { shineMode } = useStore();
 
   return (
     <div className={darkMode ? 'dark' : ""}>
@@ -105,12 +95,11 @@ export default function Home() {
                 with <span className='text-purple-500 dark:text-violet-300 font-JetBrains_MonoBold'><a href="https://en.vittascience.com">
                 Vittascience</a>
                 </span> for more than a year, as a front-end and accessibility developer.
-                For more details, please refer to my <span onClick={isShiny} className='text-purple-500 hover:cursor-pointer dark:text-violet-300 font-JetBrains_MonoBold'>resume
-                </span>.
+                For more details, please refer to my <ShinyToggle />.
             </p>
           </div>
           <div className='lg:flex lg:flex-wrap my-10 lg:justify-center'>
-            <div className='text-center shadow-lg p-10 rounded-xl m-4 dark:bg-white lg:basis-96'>
+            <div className='text-center shadow-lg p-10 rounded-xl m-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={front} height={100} />
               </div>
@@ -153,7 +142,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl m-4 dark:bg-white lg:basis-96'>
+            <div className='text-center shadow-lg p-10 rounded-xl m-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Back-end icon' src={code} width={100} height={100} />
               </div>
@@ -196,7 +185,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl m-4 dark:bg-white lg:basis-96'>
+            <div className='text-center shadow-lg p-10 rounded-xl m-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
                 <Image alt='Design icon' src={design} width={100} height={100} />
               </div>
