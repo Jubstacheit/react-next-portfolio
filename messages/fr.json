@@ -13,5 +13,17 @@
 		"desc2": ". J'ai également travaillé pendant plus d'un an à ",
 		"desc3": " en tant que développeuse front-end et accessibilité. Pour plus de détails, veuillez vous référer à mon ",
 		"resume": "CV"
+	},
+	"frontend": {
+		"desc": "En travaillant pour Vittascience pendant plus d'un an et sur mes projets personnels, j'ai appris à créer des interfaces web et mobiles agréables, accessibles et responsive.",
+		"tech": "Technologies frontend"
+	},
+	"backend": {
+		"desc": "Pendant mon bachelor, j'ai travaillé sur une application full-stack et des architectures back-end complexes, ainsi que des API et des bases de données. Je suis capable de créer des applications full-stack à l'aide d'Express, j'ai de l'expérience en PHP et j'ai également créé un SAAS.",
+		"tech": "Technologies backend"
+	},
+	"design": {
+		"desc": "Mes diverses expériences m'ont amené à travailler sur le design applicatif, à la fois en terme visuel et de conception. J'ai travaillé sur l'aspect visuel du site et des interfaces de Vittascience, ainsi que sur mes projets personnels. J'ai également appris la conception d'applications web, les bases de données et structures backend avec UML, ou encore la méthode Merise.",
+		"tech": "Mes outils de design"
 	}
 }

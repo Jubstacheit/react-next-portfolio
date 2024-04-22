@@ -100,10 +100,9 @@ export default function Home() {
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Frontend</h3>
               <p className='py-2'>
-                By working with Vittascience for more than a year and on my personnal projects, I&apos;ve learned to create appealing, 
-                accessible and responsive web and mobile interfaces.
+                {t.frontend.desc}
               </p>
-              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Frontend tech I use</h4>
+              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>{t.frontend.tech}</h4>
               <div className='flex justify-around gap-6 flex-wrap'>
                 <div className='min-w-20'>
                   <div className='flex justify-center'>
@@ -143,10 +142,9 @@ export default function Home() {
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Backend</h3>
               <p className='py-2'>
-                During my bachelor&apos;s degree, I worked on full-stack app and complex backend structures, databases and APIs. I&apos;m able to 
-                create full stack applications with Express, I&apos;ve got some experience with PHP and I even worked on a SAAS.
+              {t.backend.desc}
               </p>
-              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Backend tech I use</h4>
+              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>{t.backend.tech}</h4>
               <div className='flex justify-around gap-6 flex-wrap'>
                 <div className='min-w-20'>
                   <div className='flex justify-center'>
@@ -186,11 +184,9 @@ export default function Home() {
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Design</h3>
               <p className='py-2'>
-                My diverse experience led me to work on design, both conceptually and visually. I worked on the visual aspect of the 
-                Vittascience website and interfaces, and I&apos;ve also worked on my personnal projects. I also learned how to conceptualize
-                web apps, backend structures and databses with UML diagrams or even the Merise method.
+              {t.design.desc}
               </p>
-              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>Design tools I use</h4>
+              <h4 className='py-4 pb-8 text-purple-500 font-JetBrains_MonoBold'>{t.design.tech}</h4>
               <div className='flex justify-around gap-6 flex-wrap'>
                 <div>
                   <div className='flex justify-center'>

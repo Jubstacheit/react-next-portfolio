@@ -18,7 +18,7 @@ export function ToggleIcon({ value, onChange, options }) {
       </div>
 
       {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-14 text-center rounded-md shadow-lg bg-purple-100 dark:bg-violet-100">
+        <div className="origin-top-right absolute right-0 mt-2 w-14 text-center rounded-md shadow-lg bg-purple-100 dark:bg-white">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {options.map((option) => (
               <a key={option.value} className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-200 hover:text-gray-900" role="menuitem" onClick={() => handleClick(option.value)}>
