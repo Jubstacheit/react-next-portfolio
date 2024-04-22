@@ -1,13 +1,13 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
- 
+const { notFound } = require('next/navigation');
+const { getRequestConfig } = require('next-intl/server');
+
 // Can be imported from a shared config
 const locales = ['en', 'fr'];
- 
-export default getRequestConfig(async ({locale}) => {
+
+module.exports = getRequestConfig(async ({locale}) => {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
- 
+  if (!locales.includes(locale)) notFound();
+
   return {
     messages: (await import(`./messages/${locale}.json`)).default
   };
