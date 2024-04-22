@@ -25,7 +25,7 @@ export default function Hero() {
 					<AiFillGithub className='transition-all duration-300 hover:text-purple-500 dark:hover:text-violet-300'/>
 				</a>
 			</div>
-			<div className='p-2 mx-auto bg-gradient-to-b from-blue-400 rounded-full w-36 h-36 mt-20 overflow-hidden md:h-96 md:w-96'>
+			<div className='p-2 mx-auto bg-gradient-to-b from-blue-400 rounded-full max-w-60 max-h-60 md:max-w-96 md:max-h-96 mt-20 overflow-hidden md:h-96 md:w-96'>
 				<Image alt='Profile picture' src={profile} objectFit='cover' />
 			</div>
 		</div>
