@@ -219,7 +219,7 @@ export default function Home() {
               {t.projects.desc}
             </p>
           </div>
-          <div className='flex flex-col py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
+          <div className='flex flex-col max-w-4xl m-auto gap-2 py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
                 {t.projects.playback.title}
@@ -275,13 +275,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center shadow-lg p-4 rounded-xl dark:bg-white my-4'>
+          <div className='flex flex-col max-w-4xl m-auto gap-2 py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
                 {t.projects.vittascience.title}
               </p>
             </div>
-            <div className='lg:flex-row lg:flex-wrap md:flex-col md:flex lg:flex md:justify-center lg:justify-center lg:gap-2'>
               <div className='basis-1/3 flex-1 lg:px-2 py-4 self-center max-w-lg shadow-lg p-4 rounded-xl dark:bg-white'>
                 <Image 
                   alt='Vittascience 1' 
@@ -302,7 +301,6 @@ export default function Home() {
                   layout='responsive' 
                 />
               </div>
-            </div>
             <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
               {t.projects.vittascience.desc}
             </p>
@@ -330,13 +328,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex md:flex-col lg:justify-center shadow-lg p-4 rounded-xl dark:bg-white my-4'>
+          <div className='flex flex-col max-w-4xl m-auto gap-2 py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
                 {t.projects.linktree.title}
               </p>
             </div>
-            <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
+            <div className='basis-1/3 my-2 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
               <Image 
                 alt='Linktree' 
                 src={linktree1} 
