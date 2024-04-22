@@ -214,15 +214,15 @@ export default function Home() {
       <section>
         <div className='flex flex-col gap-4 py-10 lg:flex-row lg:flex-wrap lg:gap-0 justify-center'>
           <div className='w-full'>
-            <h3 className='text-3xl py-1 dark:text-white'>Projects</h3>
+            <h3 className='text-3xl py-1 dark:text-white'>{t.projects.title}</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Here, you can see which projects I&apos;m proud of. I&apos;ve worked on them during my studies, my work at Vittascience or on my free time.
+              {t.projects.desc}
             </p>
           </div>
-          <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
+          <div className='flex flex-col py-4 lg:flex-row lg:flex-wrap lg:flex md:flex-col md:flex lg:justify-center lg:gap-2 shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
-                Playback
+                {t.projects.playback.title}
               </p>
             </div>
             <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
@@ -246,16 +246,13 @@ export default function Home() {
               />
             </div>
             <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
-              I&apos;ve worked on the Playback project during my studies at Iscod, and still continuing today. It&apos;s a full-stack mobile and web app that
-              allows users to create an account and register games from the largest API database. Games can be put in different lists : games 
-              you&apos;ve played, games you&apos;re currently playing, and most importantly, the games that you want to play - your &apos;backlog&apos;.
-              This is still in progress and other functions are coming, like the game rating. <br />
-              The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.
+            {t.projects.playback.desc1} <br />
+            {t.projects.playback.desc2}
             </p>
             <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
-                  Links
+                {t.projects.playback.links}
                 </p>
                 <div className='flex flex-row justify-start gap-4'>
                   <a href='https://playbackapp.netlify.app' className='text-md text-purple-500'>
@@ -268,9 +265,9 @@ export default function Home() {
               </div>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
-                  Tech used
+                  {t.projects.playback.tech}
                 </p>
-                <div className='flex flex-row justify-start gap-4'>
+                <div className='flex flex-row justify-center gap-4'>
                   <TbBrandReactNative className='text-4xl text-purple-500'/>
                   <TbBrandNodejs className='text-4xl text-purple-500'/>
                   <TbBrandMysql className='text-4xl text-purple-500'/>
@@ -328,7 +325,7 @@ export default function Home() {
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Tech used
                 </p>
-                <div className='flex flex-row justify-start gap-4'>
+                <div className='flex flex-row justify-center gap-4'>
                   <TbBrandDocker className='text-4xl text-purple-500'/>
                   <TbBrandPhp className='text-4xl text-purple-500'/>
                   <TbBrandMysql className='text-4xl text-purple-500'/>
@@ -375,7 +372,7 @@ export default function Home() {
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   Tech used
                 </p>
-                <div className='flex flex-row justify-start gap-4'>
+                <div className='flex flex-row justify-center gap-4'>
                   <TbBrandNextjs className='text-4xl text-purple-500'/>
                   <TbBrandTailwind className='text-4xl text-purple-500'/>
                   <TbBrandVercel className='text-4xl text-purple-500'/>

@@ -25,5 +25,16 @@
 	"design": {
 		"desc": "Mes diverses expériences m'ont amené à travailler sur le design applicatif, à la fois en terme visuel et de conception. J'ai travaillé sur l'aspect visuel du site et des interfaces de Vittascience, ainsi que sur mes projets personnels. J'ai également appris la conception d'applications web, les bases de données et structures backend avec UML, ou encore la méthode Merise.",
 		"tech": "Mes outils de design"
+	},
+	"projects": {
+		"title": "Projects",
+		"desc": "Ici, vous pouvez voir des travaux dont je suis fière. J'ai travaillé dessus dans le cadre de mes études, chez Vittascience, ou encore sur mon temps libre.",
+		"playback" : {
+			"title": "Playback",
+			"desc1": "I've worked on the Playback project during my studies at Iscod, and still continuing today. It's a full-stack mobile and web app that allows users to create an account and register games from the largest API database. Games can be put in different lists : games you've played, games you're currently playing, and most importantly, the games that you want to play - your 'backlog'. This is still in progress and other functions are coming, like the game rating. The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
+			"desc2": "The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
+			"links": "Liens",
+			"tech": "Stack technique"
+		}
 	}
 }
