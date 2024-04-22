@@ -3,6 +3,7 @@ export const content = [
   "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   "./components/**/*.{js,ts,jsx,tsx,mdx}",
   "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  "./node_modules/flowbite/**/*.js"
 ];
 export const darkMode = 'class';
 export const theme = {
@@ -20,4 +21,6 @@ export const theme = {
   },
 };
 
-export const plugins = [];
+export const plugins = [
+  require('flowbite/plugin')
+];
