@@ -1,0 +1,52 @@
+{
+	"header": {
+		"title": "VIVIANE'S PORTFOLIO",
+		"resume": "Resume"
+	},
+	"hero": {
+		"subtitle": "Web and mobile developer",
+		"desc": "Developing SASS mobile and web applications with React Native, ReactJS and NextJS. Looking for job opportunities in Paris !"
+	},
+	"experiences" : {
+		"title": "My experiences",
+		"desc1": "I've graduated from the ",
+		"desc2": " school in 2023 with a bachelor's degree in Application Design and Development. I've also worked with ",
+		"desc3": " for more than a year, as a front-end and accessibility developer. For more details, please refer to my ",
+		"resume": "resume"
+	},
+	"frontend": {
+		"desc": "By working with Vittascience for more than a year and on my personnal projects, I've learned to create appealing, accessible and responsive web and mobile interfaces.",
+		"tech": "Frontend tech I use"
+	},
+	"backend": {
+		"desc": "During my bachelor's degree, I worked on full-stack app and complex backend structures, databases and APIs. I'm able to create full stack applications with Express, I've got some experience with PHP and I even worked on a SAAS.",
+		"tech": "Backend tech I use"
+	},
+	"design": {
+		"desc": "My diverse experience led me to work on design, both conceptually and visually. I worked on the visual aspect of the Vittascience website and interfaces, and I've also worked on my personnal projects. I also learned how to conceptualize web apps, backend structures and databses with UML diagrams or even the Merise method.",
+		"tech": "Design tools I use"
+	},
+	"projects": {
+		"title": "Projects",
+		"desc": "Here, you can see which projects I'm proud of. I've worked on them during my studies, my work at Vittascience or on my free time.",
+		"playback" : {
+			"title": "Playback",
+			"desc1": "I've worked on the Playback project during my studies at Iscod, and still continuing today. It's a full-stack mobile and web app - a SAAS - that allows users to create an account and register games from the largest API database. Games can be put in different lists : games you've played, games you're currently playing, and most importantly, the games that you want to play - your 'backlog'. This is still in progress and other functions are coming, like the game rating. The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
+			"desc2": "The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
+			"links": "Links",
+			"tech": "Tech used"
+		},
+		"vittascience" : {
+			"title": "My work at Vittascience Vittascience",
+			"desc": "During my time at Vittascience, my work revolved mainly on front-end and accessibility. Here you can see elements like the programming interfaces provided by the website - Python here - or the 'print mode' for the ressources, to make them more accessible for the schools. I had to adapt the high-contrast mode for the interfaces, because it wasn't available at first. I also added aria-labels to the elements, and made them usable with the keyboard of the user. I also created new pages from scratch, like the glossary. Vittascience gave me lots of experience about the accessibility of the web.",
+			"links": "Link",
+			"tech": "Tech used"
+		},
+		"linktree" : {
+			"title": "Linktree clone",
+			"desc": "A Linktree clone I made with NextJS, TailwindCSS, and the Vercel's Edge Config Store. It serves as a hub for my different links for my projects - personnal and profesionnal - and social media. The data is stored in the Edge Config Store in the form of a JSON. Adding or editing links and pictures changes the website without having to redeploy it. It's a fun project and I plan on updating it. This project leads to personnal links and socials, so it won't be shared on this portfolio aside from the repository.",
+			"links": "Link",
+			"tech": "Tech used"
+		}
+	}
+}

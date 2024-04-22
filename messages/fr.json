@@ -1,0 +1,52 @@
+{
+	"header": {
+		"title": "VIVIANE DESSAINT",
+		"resume": "Mon CV"
+	},
+	"hero": {
+		"subtitle": "Développeuse web et mobile",
+		"desc": "Je développe des SASS mobile et web à l'aide de React, React Native et NextJS. À la recherche d'opportunités sur Paris !"
+	},
+	"experiences" : {
+		"title": "Mon expérience",
+		"desc1": "En 2023, j'ai été diplômée d'un Bachelor Concepteur Développeur d'Applications à l'",
+		"desc2": ". J'ai également travaillé pendant plus d'un an à ",
+		"desc3": " en tant que développeuse front-end et accessibilité. Pour plus de détails, veuillez vous référer à mon ",
+		"resume": "CV"
+	},
+	"frontend": {
+		"desc": "En travaillant pour Vittascience pendant plus d'un an et sur mes projets personnels, j'ai appris à créer des interfaces web et mobiles agréables, accessibles et responsive.",
+		"tech": "Technologies frontend"
+	},
+	"backend": {
+		"desc": "Pendant mon bachelor, j'ai travaillé sur une application full-stack et des architectures back-end complexes, ainsi que des API et des bases de données. Je suis capable de créer des applications full-stack à l'aide d'Express, j'ai de l'expérience en PHP et j'ai également créé un SAAS.",
+		"tech": "Technologies backend"
+	},
+	"design": {
+		"desc": "Mes diverses expériences m'ont amené à travailler sur le design applicatif, à la fois en terme visuel et de conception. J'ai travaillé sur l'aspect visuel du site et des interfaces de Vittascience, ainsi que sur mes projets personnels. J'ai également appris la conception d'applications web, les bases de données et structures backend avec UML, ou encore la méthode Merise.",
+		"tech": "Mes outils de design"
+	},
+	"projects": {
+		"title": "Projects",
+		"desc": "Ici, vous pouvez voir des travaux dont je suis fière. J'ai travaillé dessus dans le cadre de mes études, chez Vittascience, ou encore sur mon temps libre.",
+		"playback" : {
+			"title": "Playback",
+			"desc1": "J'ai travaillé sur Playback durant mes études à ISCOF, et je continue toujours aujourd'hui. C'est une application full-stack mobile et web, un SAAS, permettant les utilisateurs de créer un compte et enregistrer des jeux récupérés depuis la plus grande API de base de données de jeux vidéo. Les jeux peuvent être placés dans des listes : les jeux joués, les jeux en cours, et surtout les jeux à jouer : votre 'backlog'. Le MVP est toujours en développement et de nouvelles fonctions sont prévues après la sortie, comme la notation de jeux.",
+			"desc2": "L'appli est principalement faite pour être utilisée sur Android en tant qu'appli Native, faite avec React Native, et sera disponible sur le Play Store.",
+			"links": "Liens",
+			"tech": "Stack technique"
+		},
+		"vittascience" : {
+			"title": "Mon travail chez Vittascience",
+			"desc": "Durant mon contrat chez Vittascience, mon travail était principalement centré sur l'accessibilité et le frontend. Ici vous pouvez voir des éléments sur lesquels j'ai travaillé, comme les interfaces de programmation fournies par le site - ici Python - ou encore le 'mode print' pour les ressources, pour les imprimer et les rendre plus accessibles aux élèves dans les écoles. J'ai eu à adapter le mode fort contraste pour les interfaces, car il n'était pas disponible à l'origine. J'ai également ajouté les aria-labels aux éléments, et les ai rendu utilisables au clavier. J'ai également créé de nouvelles pages, telles que le glossaire. Vittascience m'a donné beaucoup d'expérience à propos de l'accessibilité du web.",
+			"links": "Lien",
+			"tech": "Stack technique"
+		},
+		"linktree" : {
+			"title": "Clone de Linktree",
+			"desc": "Un clone de Linktree réalisé avec NextJS, Tailwind et l'Edge Config Store de Vercel. Il sert de hub pour mes différents liens, pour mes projets - personnels et professionnels - et réseaux sociaux. Les données sont stockées dans l'Edge Config sous la forme d'un JSON. Ajouter ou modifier les liens et images peut se faire directement sur Vercel sans demander un redéploiement. C'est un projet fun et que je prévois de le mettre à jour. Ce projet mène à des liens de réseaux privés, donc le lien du site ne sera pas partagé - excepté son repository Github.",
+			"links": "Lien",
+			"tech": "Stack technique"
+		}
+	}
+}
