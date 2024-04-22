@@ -35,6 +35,18 @@
 			"desc2": "L'appli est principalement faite pour être utilisée sur Android en tant qu'appli Native, faite avec React Native, et sera disponible sur le Play Store.",
 			"links": "Liens",
 			"tech": "Stack technique"
+		},
+		"vittascience" : {
+			"title": "Mon travail chez Vittascience",
+			"desc": "Durant mon contrat chez Vittascience, mon travail était principalement centré sur l'accessibilité et le frontend. Ici vous pouvez voir des éléments sur lesquels j'ai travaillé, comme les interfaces de programmation fournies par le site - ici Python - ou encore le 'mode print' pour les ressources, pour les imprimer et les rendre plus accessibles aux élèves dans les écoles. J'ai eu à adapter le mode fort contraste pour les interfaces, car il n'était pas disponible à l'origine. J'ai également ajouté les aria-labels aux éléments, et les ai rendu utilisables au clavier. J'ai également créé de nouvelles pages, telles que le glossaire. Vittascience m'a donné beaucoup d'expérience à propos de l'accessibilité du web.",
+			"links": "Lien",
+			"tech": "Stack technique"
+		},
+		"linktree" : {
+			"title": "Clone de Linktree",
+			"desc": "A Linktree clone I made with NextJS, TailwindCSS, and the Vercel's Edge Config Store. It serves as a hub for my different links for my projects - personnal and profesionnal - and social media. The data is stored in the Edge Config Store in the form of a JSON. Adding or editing links and pictures changes the website without having to redeploy it. It's a fun project and I plan on updating it with multinlingual display and new links. This project leads to personnal links and socials, so it won't be shared on this portfolio aside from the repository.",
+			"links": "Lien",
+			"tech": "Stack technique"
 		}
 	}
 }

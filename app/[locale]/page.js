@@ -278,7 +278,7 @@ export default function Home() {
           <div className='py-4 lg:flex-row lg:flex-wrap lg:flex lg:justify-center shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
-                My work at Vittascience
+                {t.projects.vittascience.title}
               </p>
             </div>
             <div className='lg:flex-row lg:flex-wrap md:flex-col md:flex lg:flex md:justify-center lg:justify-center lg:gap-2'>
@@ -304,16 +304,12 @@ export default function Home() {
               </div>
             </div>
             <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
-              During my time at Vittascience, my work revolved mainly on front-end and accessibility. Here you can see elements like the 
-              programming interfaces provided by the website - Python here - or the &quot;print mode&quot; for the ressources, to make them 
-              more accessible for the schools. I had to adapt the high-contrast mode for the interfaces, because it wasn&apos;t available at first.
-              I also added aria-labels to the elements, and made them usable with the keyboard of the user. I also created new pages from scratch, like 
-              the glossary. Vittascience gave me lots of experience about the accessibility of the web.
+              {t.projects.vittascience.desc}
             </p>
             <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
-                  Link
+                  {t.projects.vittascience.links}
                 </p>
                 <div className='flex flex-row justify-center'>
                   <a href='https://fr.vittascience.com' className='text-md text-purple-500'>
@@ -323,7 +319,7 @@ export default function Home() {
               </div>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
-                  Tech used
+                  {t.projects.vittascience.tech}
                 </p>
                 <div className='flex flex-row justify-center gap-4'>
                   <TbBrandDocker className='text-4xl text-purple-500'/>
@@ -337,7 +333,7 @@ export default function Home() {
           <div className='py-4 lg:flex-row lg:flex-wrap lg:flex md:flex md:flex-col lg:justify-center shadow-lg p-4 rounded-xl dark:bg-white my-4'>
             <div className='text-center w-full'>
               <p className='text-2xl font-JetBrains_MonoBold py-4 text-gray-800'>
-                Linktree clone
+                {t.projects.linktree.title}
               </p>
             </div>
             <div className='basis-1/3 flex-1 lg:px-2 py-4 max-w-lg self-center shadow-lg p-4 rounded-xl dark:bg-white'>
@@ -351,16 +347,12 @@ export default function Home() {
               />
             </div>
             <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
-              A Linktree clone I made with NextJS, TailwindCSS, and the Vercel&apos;s Edge Config Store. It serves as a hub for my different links for
-              my projects - personnal and profesionnal - and social media. The data is stored in the Edge Config Store in the form of a JSON. Adding
-              or editing links and pictures changes the website without having to redeploy it. It&apos;s a fun project and I plan on updating it with
-              multinlingual display and new links. <br />
-              This project leads to personnal links and socials, so it won&apos;t be shared on this portfolio aside from the repository.
+              {t.projects.linktree.desc}
             </p>
             <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
-                  Link
+                  {t.projects.linktree.links}
                 </p>
                 <div className='flex flex-row justify-center gap-4'>
                   <a href='https://github.com/Jubstacheit/linktree' className='text-md text-purple-500'>
@@ -370,7 +362,7 @@ export default function Home() {
               </div>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
-                  Tech used
+                  {t.projects.linktree.tech}
                 </p>
                 <div className='flex flex-row justify-center gap-4'>
                   <TbBrandNextjs className='text-4xl text-purple-500'/>
