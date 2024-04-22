@@ -249,7 +249,7 @@ export default function Home() {
             {t.projects.playback.desc1} <br />
             {t.projects.playback.desc2}
             </p>
-            <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
+            <div className='flex flex-row justify-around gap-10 lg:gap-36 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                 {t.projects.playback.links}
@@ -304,7 +304,7 @@ export default function Home() {
             <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
               {t.projects.vittascience.desc}
             </p>
-            <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
+            <div className='flex flex-row justify-around gap-10 lg:gap-36 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   {t.projects.vittascience.links}
@@ -347,7 +347,7 @@ export default function Home() {
             <p className='text-sm leading-6 text-gray-800 py-4 lg:px-2'>
               {t.projects.linktree.desc}
             </p>
-            <div className='flex flex-row justify-around gap-10 flex-wrap lg:px-8'>
+            <div className='flex flex-row justify-around gap-10 lg:gap-36 flex-wrap lg:px-8'>
               <div className='flex flex-col justify-center text-center'>
                 <p className='text-xl py-2 font-JetBrains_MonoBold text-gray-800'>
                   {t.projects.linktree.links}
