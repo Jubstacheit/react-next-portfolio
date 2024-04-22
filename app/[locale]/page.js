@@ -63,8 +63,7 @@ export default function Home() {
           <h1 className='text-center text-md md:text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
           <ul className='flex items-center gap-4 ml-4'>
             <li>
-            <LangToggle locale={locale}/>
-              {/*<TbLanguage className='text-2xl cursor-pointer'/>*/}
+              <LangToggle locale={locale}/>
             </li>
             <li>
               <DarkToggle locale={locale}/>
