@@ -31,7 +31,7 @@
 		"desc": "Here, you can see which projects I'm proud of. I've worked on them during my studies, my work at Vittascience or on my free time.",
 		"playback" : {
 			"title": "Playback",
-			"desc1": "I've worked on the Playback project during my studies at Iscod, and still continuing today. It's a full-stack mobile and web app that allows users to create an account and register games from the largest API database. Games can be put in different lists : games you've played, games you're currently playing, and most importantly, the games that you want to play - your 'backlog'. This is still in progress and other functions are coming, like the game rating. The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
+			"desc1": "I've worked on the Playback project during my studies at Iscod, and still continuing today. It's a full-stack mobile and web app - a SAAS - that allows users to create an account and register games from the largest API database. Games can be put in different lists : games you've played, games you're currently playing, and most importantly, the games that you want to play - your 'backlog'. This is still in progress and other functions are coming, like the game rating. The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
 			"desc2": "The app is primarily usable on Android as a Native app, made with React Native, and will be available on the Play Store.",
 			"links": "Links",
 			"tech": "Tech used"
