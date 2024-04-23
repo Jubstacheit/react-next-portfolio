@@ -31,7 +31,7 @@
 		"desc": "Ici, vous pouvez voir des travaux dont je suis fière. J'ai travaillé dessus dans le cadre de mes études, chez Vittascience, ou encore sur mon temps libre.",
 		"playback" : {
 			"title": "Playback",
-			"desc1": "J'ai travaillé sur Playback durant mes études à ISCOF, et je continue toujours aujourd'hui. C'est une application full-stack mobile et web, un SAAS, permettant les utilisateurs de créer un compte et enregistrer des jeux récupérés depuis la plus grande API de base de données de jeux vidéo. Les jeux peuvent être placés dans des listes : les jeux joués, les jeux en cours, et surtout les jeux à jouer : votre 'backlog'. Le MVP est toujours en développement et de nouvelles fonctions sont prévues après la sortie, comme la notation de jeux.",
+			"desc1": "J'ai travaillé sur Playback durant mes études à ISCOF, et je continue toujours aujourd'hui. C'est une application full-stack mobile et web, un SAAS, permettant aux utilisateurs de créer un compte et enregistrer des jeux récupérés depuis la plus grande API de base de données de jeux vidéo. Les jeux peuvent être placés dans des listes : les jeux joués, les jeux en cours, et surtout les jeux à jouer : votre 'backlog'. Le MVP est toujours en développement et de nouvelles fonctions sont prévues après la sortie, comme la notation de jeux.",
 			"desc2": "L'appli est principalement faite pour être utilisée sur Android en tant qu'appli Native, faite avec React Native, et sera disponible sur le Play Store.",
 			"links": "Liens",
 			"tech": "Stack technique"
