@@ -4,9 +4,11 @@ import { useStore } from "../store"
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 
 export function DarkToggle() {
-	const { darkMode, setDarkMode } = useStore()
+	const { setDarkMode } = useStore()
 
 	return (
-		<BsFillMoonStarsFill onClick={setDarkMode} className='cursor-pointer text-2xl'/>
+		<button onClick={setDarkMode} className="cursor-pointer p-2 hover:bg-gray-100 dark:hover:bg-gray-950 rounded-lg">
+			<BsFillMoonStarsFill onClick={setDarkMode} className='text-2xl'/>
+		</button>
 	)
 }

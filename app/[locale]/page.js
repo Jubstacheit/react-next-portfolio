@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className={darkMode ? 'dark' : ""}>
       <div className='sticky top-0'>
-        <nav className='px-4 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
+        <nav role='navigation' className='px-4 md:px-20 lg:px-40 py-4 md:py-8 flex justify-between bg-white dark:bg-gray-900 dark:text-white'>
           <h1 className='text-center text-md md:text-xl font-JetBrains_MonoBold'>{t.header.title}</h1>
           <ul className='flex items-center gap-4 ml-4'>
             <li>
