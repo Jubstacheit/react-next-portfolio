@@ -1,15 +1,14 @@
 'use client'
 
 import { useRouter } from '../navigation'
+import { useEffect } from 'react'
 
 export default function NotFoundPage() {
 	const router = useRouter()
 	
-	const redirect = () => {
+	useEffect(() => {
 		router.replace('/', { locale: 'en' })
-	}
-	
-	redirect()
+	}, [router])
 	
 	return <div>Redirecting...</div>;
 }
