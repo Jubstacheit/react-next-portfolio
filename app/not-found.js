@@ -11,5 +11,5 @@ export default function NotFoundPage() {
 	
 	redirect()
 	
-	return;
+	return null;
 }
