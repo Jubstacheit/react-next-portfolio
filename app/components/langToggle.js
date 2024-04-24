@@ -1,7 +1,7 @@
 'use client'
 
 import { TbLanguage } from 'react-icons/tb'
-import { useRouter, usePathname } from '@/navigation'
+import { useRouter, usePathname } from '../../navigation'
 import 'flowbite'
 import {ToggleIcon} from './toggleIcon'
 
