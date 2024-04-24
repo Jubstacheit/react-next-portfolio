@@ -1,14 +1,13 @@
-'use client'
-
-import { useRouter } from '../navigation'
-import { useEffect } from 'react'
-
-export default function NotFoundPage() {
-	const router = useRouter()
-	
-	useEffect(() => {
-		router.replace('/', { locale: 'en' })
-	}, [router])
-	
-	return <div>Redirecting...</div>;
+'use client';
+ 
+import Error from 'next/error';
+ 
+export default function NotFound() {
+  return (
+    <html lang="en">
+      <body>
+        <Error statusCode={404} />
+      </body>
+    </html>
+  );
 }
