@@ -69,14 +69,14 @@ export default function Home() {
               <DarkToggle locale={locale}/>
             </li>
             <li>
-              <a role='button' tabIndex={0} className={`transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 ml-4 md:ml-8 rounded-md ${shineMode ? 'font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="./CV.pdf" download="Viviane Dessaint - CV" >{t.header.resume}</a>
+              <a role='button' tabIndex={0} className={`text-nowrap transition-all bg-gradient-to-r from-violet-300 to-purple-500 font-JetBrains_MonoBold text-white shine:text-blue px-4 py-2 md:ml-8 rounded-md ${shineMode ? 'font-JetBrains_MonoExtraBold animated-background from-purple-600 via-blue-600 to-violet-700' : ''}`} href="./CV.pdf" download="Viviane Dessaint - CV" >{t.header.resume}</a>
             </li>
           </ul>
         </nav>
       </div>
 
       <main className='bg-white px-4 md:px-20 lg:px-32 dark:bg-gray-900'>
-        <section className="min-h-screen">          
+        <section className="mb-16">          
           <Hero />
         </section>
 
