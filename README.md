@@ -1,3 +1,7 @@
+This repository is for my developer portfolio. It is meant to show off my objectives, projects and skills. This portfolio is for professionnal use.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
