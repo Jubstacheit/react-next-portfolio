@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { TbLanguage } from 'react-icons/tb'
 
-export function ToggleIcon({ value, onChange, options }) {
+export function ToggleIcon({ onChange, options }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = (optionValue) => {
