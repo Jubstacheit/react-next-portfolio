@@ -96,7 +96,7 @@ export default function Home() {
           <div className='lg:flex lg:flex-wrap my-10 lg:justify-center'>
             <div className='text-center shadow-lg p-4 md:p-10 rounded-xl md:mx-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
-                <Image alt='Design icon' src={front} height={100} />
+                <Image alt='Design icon' src={front} placeholder='blur' height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Frontend</h3>
               <p className='py-2'>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
             <div className='text-center shadow-lg p-4 md:p-10 rounded-xl md:mx-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
-                <Image alt='Back-end icon' src={code} width={100} height={100} />
+                <Image alt='Back-end icon' src={code} placeholder='blur' width={100} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Backend</h3>
               <p className='py-2'>
@@ -180,7 +180,7 @@ export default function Home() {
             </div>
             <div className='text-center shadow-lg p-4 md:p-10 rounded-xl md:mx-4 my-8 lg:my-4 dark:bg-white lg:basis-96'>
               <div className='flex justify-center'>
-                <Image alt='Design icon' src={design} width={100} height={100} />
+                <Image alt='Design icon' src={design} placeholder='blur' width={100} height={100} />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>Design</h3>
               <p className='py-2'>
@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className='flex justify-center'>
-                    <Image width="36" height="36" src="https://img.icons8.com/3B82F6/external-kiranshastry-solid-kiranshastry/64/external-flow-interface-kiranshastry-solid-kiranshastry.png" alt="external-flow-interface-kiranshastry-solid-kiranshastry"/>
+                    <Image width="36" height="36" placeholder='blur' src="https://img.icons8.com/3B82F6/external-kiranshastry-solid-kiranshastry/64/external-flow-interface-kiranshastry-solid-kiranshastry.png" alt="external-flow-interface-kiranshastry-solid-kiranshastry"/>
                   </div>
                   <p>UML</p>
                 </div>
@@ -229,6 +229,7 @@ export default function Home() {
               <Image 
                 alt='Playback 1' 
                 src={playback1} 
+                placeholder='blur'
                 className='rounded-lg object-cover' 
                 width={'100%'} 
                 height={"100%"} 
@@ -239,6 +240,7 @@ export default function Home() {
               <Image 
                 alt='Playback 2' 
                 src={playback2} 
+                placeholder='blur'
                 className='rounded-lg object-cover' 
                 width={'100%'} 
                 height={"100%"} 
@@ -285,6 +287,7 @@ export default function Home() {
                 <Image 
                   alt='Vittascience 1' 
                   src={vittascience1} 
+                  placeholder='blur'
                   className='rounded-lg object-cover' 
                   width={'100%'} 
                   height={"100%"} 
@@ -295,6 +298,7 @@ export default function Home() {
                 <Image 
                   alt='Vittascience 2' 
                   src={vittascience2} 
+                  placeholder='blur'
                   className='rounded-lg object-cover' 
                   width={'100%'} 
                   height={"100%"} 
@@ -338,6 +342,7 @@ export default function Home() {
               <Image 
                 alt='Linktree' 
                 src={linktree1} 
+                placeholder='blur'
                 className='rounded-lg object-cover' 
                 width={'100%'} 
                 height={"100%"} 
