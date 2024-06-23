@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -12,6 +12,7 @@
   },
   "homepage": "https://Jubstacheit.github.io/react-next-portfolio/",
   "dependencies": {
+    "@million/lint": "^1.0.0-rc.26",
     "autoprefixer": "^10.4.19",
     "flowbite": "^2.3.0",
     "js-cookie": "^3.0.5",
