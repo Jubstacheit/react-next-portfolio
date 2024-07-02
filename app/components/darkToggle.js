@@ -1,6 +1,7 @@
 'use client'
 
 import { useStore } from "../store"
+import React from 'react'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 
 export function DarkToggle() {

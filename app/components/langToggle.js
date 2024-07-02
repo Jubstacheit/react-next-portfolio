@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 'use client'
 
-import { TbLanguage } from 'react-icons/tb'
+import React from 'react'
 import { useRouter, usePathname } from '../../navigation'
 import 'flowbite'
 import {ToggleIcon} from './toggleIcon'

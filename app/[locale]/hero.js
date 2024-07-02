@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import React from 'react'
 import profile from '../../public/profile.png'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { useMessages } from 'next-intl'

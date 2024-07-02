@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { Inter } from "next/font/google";
 import "../globals.css";
-import Home from "./page";
-import { useTranslations, useMessages, NextIntlClientProvider } from "next-intl";
+import React from "react";
+import { useMessages, NextIntlClientProvider } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 

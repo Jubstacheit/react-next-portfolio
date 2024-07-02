@@ -1,9 +1,8 @@
 'use client'
 
-import {BsBootstrap, BsFillMoonStarsFill, BsGithub, BsLink} from 'react-icons/bs';
-import {AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import {BsGithub, BsLink} from 'react-icons/bs';
+import React from 'react';
 import Image from "next/image";
-import profile from "../../public/profile.png";
 import front from '../../public/react.png'
 import design from '../../public/design.png';
 import code from '../../public/code.png';
@@ -27,8 +26,6 @@ import {
   TbBrandBootstrap,
   TbBrandDocker,
   TbBrandVercel,
-  TbLanguage,
-  TbLanguageOff
 } from "react-icons/tb";
 
 

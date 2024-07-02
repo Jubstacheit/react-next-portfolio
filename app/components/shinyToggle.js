@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { useStore } from "../store"
 import { useState } from "react"
 import { useMessages } from "next-intl"
